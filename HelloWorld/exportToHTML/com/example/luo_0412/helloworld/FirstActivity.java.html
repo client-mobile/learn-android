@@ -1,0 +1,106 @@
+<html>
+<head>
+<title>FirstActivity.java</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.ln { color: rgb(0,0,0); font-weight: normal; font-style: normal; }
+.s0 { color: rgb(204,120,50); }
+.s1 { color: rgb(169,183,198); }
+.s2 { color: rgb(98,151,85); font-style: italic; }
+.s3 { color: rgb(128,128,128); }
+.s4 { color: rgb(106,135,89); }
+</style>
+</head>
+<BODY BGCOLOR="#2b2b2b">
+<TABLE CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#C0C0C0" >
+<TR><TD><CENTER>
+<FONT FACE="Arial, Helvetica" COLOR="#000000">
+FirstActivity.java</FONT>
+</center></TD></TR></TABLE>
+<pre>
+<span class="s0">package </span><span class="s1">com.example.luo_0412.helloworld</span><span class="s0">;</span><span class="s1"> 
+ 
+</span><span class="s2">/** 
+ * Created by Luo_0412 on 2016/10/7. 
+ */</span><span class="s1"> 
+ 
+</span><span class="s0">import </span><span class="s1">android.app.Activity</span><span class="s0">;</span><span class="s1"> 
+</span><span class="s0">import </span><span class="s1">android.content.Intent</span><span class="s0">;</span><span class="s1"> 
+</span><span class="s0">import </span><span class="s1">android.os.Bundle</span><span class="s0">;</span><span class="s1"> 
+</span><span class="s0">import </span><span class="s1">android.view.Menu</span><span class="s0">;</span><span class="s1"> 
+</span><span class="s0">import </span><span class="s1">android.view.MenuItem</span><span class="s0">;</span><span class="s1"> 
+</span><span class="s0">import </span><span class="s1">android.view.View</span><span class="s0">;</span><span class="s1"> 
+</span><span class="s0">import </span><span class="s1">android.widget.Button</span><span class="s0">;</span><span class="s1"> 
+</span><span class="s0">import </span><span class="s1">android.widget.EditText</span><span class="s0">;</span><span class="s1"> 
+</span><span class="s0">import </span><span class="s1">android.view.View.OnClickListener</span><span class="s0">;</span><span class="s1"> 
+</span><span class="s0">import </span><span class="s1">android.widget.Toast</span><span class="s0">;</span><span class="s1"> 
+ 
+ 
+</span><span class="s0">public class </span><span class="s1">FirstActivity </span><span class="s0">extends </span><span class="s1">Activity { 
+    Button btn1</span><span class="s0">, </span><span class="s1">btn2</span><span class="s0">;</span><span class="s1"> 
+    @Override 
+ 
+    </span><span class="s0">protected void </span><span class="s1">onCreate(Bundle savedInstanceState) { 
+        </span><span class="s0">super</span><span class="s1">.onCreate(savedInstanceState)</span><span class="s0">;</span><span class="s1"> 
+</span><span class="s3">//        requestWindowFeature(Window.FEATURE_NO_TITLE);  // 隐藏标题</span><span class="s1"> 
+        setContentView(R.layout.first_layout)</span><span class="s0">;</span><span class="s1"> 
+</span><span class="s3">//        setContentView(R.menu.main);</span><span class="s1"> 
+ 
+        </span><span class="s3">// 获取应用程序中的bn按钮</span><span class="s1"> 
+        btn1 = (Button) findViewById(R.id.btn1)</span><span class="s0">;</span><span class="s1"> 
+        btn2 = (Button) findViewById(R.id.btn2)</span><span class="s0">;</span><span class="s1"> 
+        </span><span class="s3">// 为按钮绑定事件监听器。</span><span class="s1"> 
+        btn1.setOnClickListener(</span><span class="s0">new </span><span class="s1">click1())</span><span class="s0">;</span><span class="s1"> 
+ 
+</span><span class="s3">//        btn2.setOnClickListener(new View.OnClickListener() {</span><span class="s1"> 
+</span><span class="s3">//            @Override</span><span class="s1"> 
+</span><span class="s3">//            public void onClick(View v) {</span><span class="s1"> 
+</span><span class="s3">//                Toast.makeText(FirstActivity.this, &quot;You clicked Button 2&quot;,</span><span class="s1"> 
+</span><span class="s3">//                        Toast.LENGTH_SHORT).show();</span><span class="s1"> 
+</span><span class="s3">//            }</span><span class="s1"> 
+</span><span class="s3">//        });</span><span class="s1"> 
+        btn2.setOnClickListener(</span><span class="s0">new </span><span class="s1">OnClickListener() { 
+            @Override 
+            </span><span class="s0">public void </span><span class="s1">onClick(View v) { 
+                Intent intent = </span><span class="s0">new </span><span class="s1">Intent(FirstActivity.</span><span class="s0">this, </span><span class="s1">SecondActivity.</span><span class="s0">class</span><span class="s1">)</span><span class="s0">;</span><span class="s1"> 
+                startActivity(intent)</span><span class="s0">;</span><span class="s1"> 
+            } 
+        })</span><span class="s0">;</span><span class="s1"> 
+ 
+ 
+    } 
+ 
+</span><span class="s3">//    public boolean onCreateOptionsMenu(Menu menu) {</span><span class="s1"> 
+</span><span class="s3">//        getMenuInflater().inflate(R.menu.main, menu);</span><span class="s1"> 
+</span><span class="s3">//        return true;</span><span class="s1"> 
+</span><span class="s3">//    }</span><span class="s1"> 
+</span><span class="s3">//</span><span class="s1"> 
+</span><span class="s3">//    public boolean onOptionsItemSelected(MenuItem item) {</span><span class="s1"> 
+</span><span class="s3">//        switch (item.getItemId()) {</span><span class="s1"> 
+</span><span class="s3">//            case R.id.add_item:</span><span class="s1"> 
+</span><span class="s3">//                Toast.makeText(this, &quot;You clicked Add&quot;, Toast.LENGTH_SHORT).show();</span><span class="s1"> 
+</span><span class="s3">//                break;</span><span class="s1"> 
+</span><span class="s3">//            case R.id.remove_item:</span><span class="s1"> 
+</span><span class="s3">//                Toast.makeText(this, &quot;You clicked Remove&quot;, Toast.LENGTH_SHORT).show();</span><span class="s1"> 
+</span><span class="s3">//                break;</span><span class="s1"> 
+</span><span class="s3">//            default:</span><span class="s1"> 
+</span><span class="s3">//        }</span><span class="s1"> 
+</span><span class="s3">//        return true;</span><span class="s1"> 
+</span><span class="s3">//    }</span><span class="s1"> 
+ 
+ 
+ 
+    </span><span class="s0">class </span><span class="s1">click1 </span><span class="s0">implements </span><span class="s1">OnClickListener 
+    { 
+        </span><span class="s3">// 实现监听器类必须实现的方法，该方法将会作为事件处理器</span><span class="s1"> 
+        </span><span class="s0">public void </span><span class="s1">onClick(View v) 
+        { 
+            EditText txt = (EditText) findViewById(R.id.txt)</span><span class="s0">;</span><span class="s1"> 
+            txt.setText(</span><span class="s4">&quot;btn2按钮被单击了哦！&quot;</span><span class="s1">)</span><span class="s0">;</span><span class="s1"> 
+        } 
+    } 
+ 
+} 
+</span></pre>
+</body>
+</html>
