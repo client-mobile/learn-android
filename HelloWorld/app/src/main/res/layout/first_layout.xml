@@ -14,12 +14,22 @@
         android:textSize="12pt"
         />
 
+    <!--match_parent表示让当前元素和父元素一样宽。-->
+    <!--wrap_content，表示当前元素的高度只要能刚好包含里面的内容就行。-->
+
     <!-- 定义一个按钮，该按钮将作为事件源 -->
     <Button
         android:id="@+id/send_btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="发送号码给Mary"
+        />
+
+    <Button
+        android:id="@+id/widget_demo_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="观看各种UI widget"
         />
 
 
