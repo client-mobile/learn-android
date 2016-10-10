@@ -30,14 +30,14 @@ public class SecondActivity extends Activity {
         Intent intent=getIntent();
         final String StringE=intent.getStringExtra("extra");
         tel_num.setText(StringE);
-        String StringG = "";
+        String StringG = StringE;
 
         // 判断奇偶数
         int i = Integer.parseInt(StringE);
         if(i % 2 == 1) {
-            StringG = "是奇数";
+            StringG += "是奇数";
         } else {
-            StringG = "是偶数";
+            StringG += "是偶数";
         }
 
         // Toast显示奇偶数判断

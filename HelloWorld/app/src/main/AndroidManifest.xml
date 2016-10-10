@@ -9,15 +9,19 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
+        <!--应用程序默认启动的 应用程序默认启动的Activity-->
         <activity
             android:name=".FirstActivity"
-            android:label="QQ" >
-            <intent-filter>
+            android:label="Luo-apk" >
+            <intent-filter> <!--描述了Activity启动的位置和时间-->
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
+                <!--组件支持的Intent Category种类-->
             </intent-filter>
-        </activity><!-- ATTENTION: This was auto-generated to add Google Play services to your project for
+        </activity>
+        <!-- ATTENTION: This was auto-generated to add Google Play services to your project for
      App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information. -->
+
         <activity android:name=".SecondActivity" ></activity>
 
         <meta-data
