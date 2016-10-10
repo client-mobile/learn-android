@@ -39,3 +39,6 @@ captures/
 
 # Keystore files
 *.jks
+
+# 忽略first-line下面的文件夹
+/first-line/*
