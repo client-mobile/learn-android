@@ -33,5 +33,26 @@
         android:text="观看各种UI widget"
         />
 
+    <Button
+        android:id="@+id/widget_demo_btn2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="再次观看UI widget"
+        />
+
+    <Button
+        android:id="@+id/linear_layout_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="线性布局示例"
+        />
+
+    <Button
+        android:id="@+id/relative_layout_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="相对布局示例"
+        />
+
 
 </LinearLayout>

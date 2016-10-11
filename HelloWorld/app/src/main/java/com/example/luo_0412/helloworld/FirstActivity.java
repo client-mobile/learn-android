@@ -13,18 +13,27 @@ import android.widget.EditText;
 import android.view.View.OnClickListener;
 
 public class FirstActivity extends Activity {
-    Button send_btn, widget_demo_btn;
-    EditText tel_txt;
+    private Button send_btn;
+    private Button widget_demo_btn;
+    private Button widget_demo_btn2;
+    private Button linear_layout_btn;
+    private Button relative_layout_btn;
+    private EditText tel_txt;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE);  // 隐藏标题
-//        一定要在setContentView()之前执行，不然会报错
+                       // 一定要在setContentView()之前执行，不然会报错
         setContentView(R.layout.first_layout);
 
         send_btn = (Button) findViewById(R.id.send_btn);
         widget_demo_btn = (Button) findViewById(R.id.widget_demo_btn);
+        widget_demo_btn2 = (Button) findViewById(R.id.widget_demo_btn2);
+        linear_layout_btn = (Button) findViewById(R.id.linear_layout_btn);
+        relative_layout_btn = (Button) findViewById(R.id.relative_layout_btn);
+
+
         tel_txt = (EditText) findViewById(R.id.tel_txt);
 
         // 发送数字的按钮
@@ -50,6 +59,35 @@ public class FirstActivity extends Activity {
                 startActivity(intent);
             }
         });
+
+        widget_demo_btn2.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent();
+                intent.setClass(FirstActivity.this, WidgetDemoActivity2.class);
+                startActivity(intent);
+            }
+        });
+
+        linear_layout_btn.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent();
+                intent.setClass(FirstActivity.this, LinearLayoutDemoActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        relative_layout_btn.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent();
+                intent.setClass(FirstActivity.this, RelativeLayoutDemoActivity.class);
+                startActivity(intent);
+            }
+        });
+
+
 
 
     }

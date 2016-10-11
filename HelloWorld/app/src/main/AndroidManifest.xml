@@ -4,7 +4,7 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/message_left"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
@@ -12,7 +12,7 @@
         <!--应用程序默认启动的 应用程序默认启动的Activity-->
         <activity
             android:name=".FirstActivity"
-            android:label="Luo-apk" >
+            android:label="@string/app_name" >
             <intent-filter> <!--描述了Activity启动的位置和时间-->
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -24,8 +24,12 @@
 
         <activity android:name=".SecondActivity" ></activity>
         <activity android:name=".WidgetDemoActivity" ></activity>
+        <activity android:name=".WidgetDemoActivity2" ></activity>
         <activity android:name=".ListViewDemoActivity" ></activity>
         <activity android:name=".FragmentDemoActivity" ></activity>
+        <activity android:name=".LinearLayoutDemoActivity" ></activity>
+        <activity android:name=".RelativeLayoutDemoActivity" ></activity>
+
 
         <meta-data
             android:name="com.google.android.gms.version"

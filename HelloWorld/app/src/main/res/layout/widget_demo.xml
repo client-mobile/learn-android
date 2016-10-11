@@ -14,6 +14,8 @@
         android:textColor="#EA5246"
         android:text="This is TextView" />
 
+    <!--android:layout_gravity="top" 控件在布局中的对齐方式-->
+    <!--layout_weight ——使用比例的方式来指定控件的大小-->
 
     <!--编辑框-->
     <EditText
@@ -62,6 +64,27 @@
         android:layout_height="wrap_content"
         android:text="点击隐显进度条" />
 
+    <ProgressBar
+        android:id="@+id/demo_progress_bar2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:max="100"
+        />
+
+    <Button
+        android:id="@+id/pgbar_ctl_btn2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="点击改变进度条进度" />
+
+    <ProgressBar
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:indeterminate="true" />
+
 
     <!--单选按钮-->
     <TextView
@@ -97,6 +120,19 @@
         android:id="@+id/rb_normal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/alert_dialog_ctl_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="AlertDialog测试按钮" />
+
+    <Button
+        android:id="@+id/progress_dialog_ctl_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ProgressDialog测试按钮" />
+
 
 
 
