@@ -25,12 +25,15 @@
         <activity android:name=".SecondActivity" ></activity>
         <activity android:name=".WidgetDemoActivity" ></activity>
         <activity android:name=".WidgetDemoActivity2" ></activity>
-        <activity android:name=".ListViewDemoActivity" ></activity>
+        <activity android:name=".ListViewDemoActivity">
+        </activity>
         <activity android:name=".FragmentDemoActivity" ></activity>
         <activity android:name=".LinearLayoutDemoActivity" ></activity>
         <activity android:name=".RelativeLayoutDemoActivity" ></activity>
         <activity android:name=".FrameLayoutDemoActivity" ></activity>
         <activity android:name=".TableLayoutDemoActivity" ></activity>
+        <activity android:name=".MyselfTitleDemoActivity" ></activity>
+        <activity android:name=".MsgActivity" ></activity>
 
 
         <meta-data

@@ -46,6 +46,23 @@
 
     <TableRow>
         <Button
+            android:id="@+id/myself_title_btn"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="自定义顶部标题"
+            />
+
+        <!--<Button-->
+            <!--android:id="@+id/widget_demo_btn2"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="1"-->
+            <!--android:text="UI widget 2"-->
+            <!--/>-->
+
+    </TableRow>
+
+    <TableRow>
+        <Button
             android:id="@+id/linear_layout_btn"
             android:layout_height="wrap_content"
             android:text="LinearLayout示例"
@@ -84,7 +101,17 @@
             android:text="ListView示例"
             android:layout_weight="1"
             />
+
+        <Button
+            android:id="@+id/msg_ctl_btn"
+            android:layout_height="wrap_content"
+            android:text="精美聊天界面"
+            android:layout_weight="1"
+            />
+
     </TableRow>
+
+
 
 
 

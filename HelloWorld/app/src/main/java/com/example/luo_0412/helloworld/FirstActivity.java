@@ -24,6 +24,8 @@ public class FirstActivity extends Activity {
     private Button frame_layout_btn;
     private Button table_layout_btn;
     private Button list_view_btn;
+    private Button myself_title_btn;
+    private Button msg_ctl_btn;
     private EditText tel_txt;
 
     @Override
@@ -31,6 +33,7 @@ public class FirstActivity extends Activity {
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE);  // 隐藏标题
                        // 一定要在setContentView()之前执行，不然会报错
+                                    // 现在的bug是怎么再次显示出来
         setContentView(R.layout.first_layout);
 
         send_btn = (Button) findViewById(R.id.send_btn);
@@ -41,6 +44,8 @@ public class FirstActivity extends Activity {
         frame_layout_btn = (Button) findViewById(R.id.frame_layout_btn);
         table_layout_btn = (Button) findViewById(R.id.table_layout_btn);
         list_view_btn = (Button) findViewById(R.id.list_view_btn);
+        myself_title_btn = (Button) findViewById(R.id.myself_title_btn);
+        msg_ctl_btn = (Button) findViewById(R.id.msg_ctl_btn);
 
 
         tel_txt = (EditText) findViewById(R.id.tel_txt);
@@ -123,8 +128,23 @@ public class FirstActivity extends Activity {
             }
         });
 
+        myself_title_btn.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent();
+                intent.setClass(FirstActivity.this, MyselfTitleDemoActivity.class);
+                startActivity(intent);
+            }
+        });
 
-
+        msg_ctl_btn.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent();
+                intent.setClass(FirstActivity.this, MsgActivity.class);
+                startActivity(intent);
+            }
+        });
 
     }
 
