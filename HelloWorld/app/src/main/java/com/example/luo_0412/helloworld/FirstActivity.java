@@ -7,7 +7,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-//import android.view.Window;
+import android.view.Window;
 import android.widget.Button;
 import android.widget.EditText;
 import android.view.View.OnClickListener;
@@ -19,7 +19,7 @@ public class FirstActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-//        requestWindowFeature(Window.FEATURE_NO_TITLE);  // 隐藏标题
+        requestWindowFeature(Window.FEATURE_NO_TITLE);  // 隐藏标题
 //        一定要在setContentView()之前执行，不然会报错
         setContentView(R.layout.first_layout);
 
@@ -28,6 +28,7 @@ public class FirstActivity extends Activity {
         tel_txt = (EditText) findViewById(R.id.tel_txt);
 
         // 发送数字的按钮
+        // 匿名类的方式
         send_btn.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -40,6 +41,7 @@ public class FirstActivity extends Activity {
             }
         });
 
+        // 查看widget的按钮
         widget_demo_btn.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -48,7 +50,6 @@ public class FirstActivity extends Activity {
                 startActivity(intent);
             }
         });
-
 
 
     }

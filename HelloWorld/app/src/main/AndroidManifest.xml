@@ -24,6 +24,8 @@
 
         <activity android:name=".SecondActivity" ></activity>
         <activity android:name=".WidgetDemoActivity" ></activity>
+        <activity android:name=".ListViewDemoActivity" ></activity>
+        <activity android:name=".FragmentDemoActivity" ></activity>
 
         <meta-data
             android:name="com.google.android.gms.version"

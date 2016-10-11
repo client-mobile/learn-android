@@ -14,12 +14,6 @@
         android:textColor="#EA5246"
         android:text="This is TextView" />
 
-    <!--按钮-->
-    <Button
-        android:id="@+id/demo_btn"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Button" />
 
     <!--编辑框-->
     <EditText
@@ -31,14 +25,82 @@
         android:maxLines="2"
         />
 
+    <Button
+        android:id="@+id/edit_ctl_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="点击显示编辑框的内容" />
+
+
     <!--图片-->
     <ImageView
         android:id="@+id/demo_image_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:src="@drawable/pen"
+        android:src="@drawable/message_left"
         />
+
+    <!--按钮-->
+    <Button
+        android:id="@+id/img_ctl_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="点击切换图片" />
+
+
+    <!--进度条-->
+    <ProgressBar
+        android:id="@+id/demo_progress_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <Button
+        android:id="@+id/pgbar_ctl_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="点击隐显进度条" />
+
+
+    <!--单选按钮-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="请选择性别"
+        android:textSize="23sp"
+        />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/btnMan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="男"
+            android:checked="true"/>
+
+        <RadioButton
+            android:id="@+id/btnWoman"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="女"/>
+    </RadioGroup>
+
+
+    <!--星级评分-->
+    <RatingBar
+        android:id="@+id/rb_normal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+
+
 
 
 

@@ -16,7 +16,7 @@ import android.widget.Toast;
 
 
 public class SecondActivity extends Activity {
-    Button tel_btn;
+    private Button tel_btn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

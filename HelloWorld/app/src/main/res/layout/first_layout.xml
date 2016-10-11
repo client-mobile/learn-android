@@ -11,6 +11,7 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:cursorVisible="false"
+        android:hint="只能输短号，不要乱来！！"
         android:textSize="12pt"
         />
 
@@ -31,8 +32,6 @@
         android:layout_height="wrap_content"
         android:text="观看各种UI widget"
         />
-
-
 
 
 </LinearLayout>
