@@ -111,6 +111,18 @@
 
     </TableRow>
 
+    <TableRow>
+        <Button
+            android:id="@+id/fragment_ctl_btn"
+            android:layout_height="wrap_content"
+            android:text="碎片示例"
+            android:layout_weight="1"
+            />
+
+    </TableRow>
+
+
+
 
 
 

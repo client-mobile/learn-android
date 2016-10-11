@@ -26,6 +26,7 @@ public class FirstActivity extends Activity {
     private Button list_view_btn;
     private Button myself_title_btn;
     private Button msg_ctl_btn;
+    private Button fragment_ctl_btn;
     private EditText tel_txt;
 
     @Override
@@ -46,6 +47,8 @@ public class FirstActivity extends Activity {
         list_view_btn = (Button) findViewById(R.id.list_view_btn);
         myself_title_btn = (Button) findViewById(R.id.myself_title_btn);
         msg_ctl_btn = (Button) findViewById(R.id.msg_ctl_btn);
+        fragment_ctl_btn = (Button) findViewById(R.id.fragment_ctl_btn);
+
 
 
         tel_txt = (EditText) findViewById(R.id.tel_txt);
@@ -142,6 +145,15 @@ public class FirstActivity extends Activity {
             public void onClick(View v) {
                 Intent intent=new Intent();
                 intent.setClass(FirstActivity.this, MsgActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        fragment_ctl_btn.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent();
+                intent.setClass(FirstActivity.this, FragmentDemoActivity.class);
                 startActivity(intent);
             }
         });
