@@ -1,58 +1,101 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:gravity="center_horizontal">
+    android:layout_height="match_parent">
 
-    <EditText
-        android:id="@+id/tel_txt"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:cursorVisible="false"
-        android:hint="只能输短号，不要乱来！！"
-        android:textSize="12pt"
-        />
+    <TableRow>
+        <EditText
+            android:id="@+id/tel_txt"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:cursorVisible="false"
+            android:hint="只能输短号"
+            android:layout_weight="1"
+            android:textSize="12pt"
+            />
 
-    <!--match_parent表示让当前元素和父元素一样宽。-->
-    <!--wrap_content，表示当前元素的高度只要能刚好包含里面的内容就行。-->
+        <!--match_parent表示让当前元素和父元素一样宽。-->
+        <!--wrap_content，表示当前元素的高度只要能刚好包含里面的内容就行。-->
 
-    <!-- 定义一个按钮，该按钮将作为事件源 -->
-    <Button
-        android:id="@+id/send_btn"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="发送号码给Mary"
-        />
+        <!-- 定义一个按钮，该按钮将作为事件源 -->
+        <Button
+            android:id="@+id/send_btn"
+            android:layout_height="wrap_content"
+            android:text="发送号码给Mary"
+            android:layout_weight="4"
+            />
 
-    <Button
-        android:id="@+id/widget_demo_btn"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="观看各种UI widget"
-        />
+    </TableRow>
 
-    <Button
-        android:id="@+id/widget_demo_btn2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="再次观看UI widget"
-        />
+    <TableRow>
+        <Button
+            android:id="@+id/widget_demo_btn"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="UI widget 1"
+            />
 
-    <Button
-        android:id="@+id/linear_layout_btn"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="线性布局示例"
-        />
+        <Button
+            android:id="@+id/widget_demo_btn2"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="UI widget 2"
+            />
 
-    <Button
-        android:id="@+id/relative_layout_btn"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="相对布局示例"
-        />
+    </TableRow>
+
+    <TableRow>
+        <Button
+            android:id="@+id/linear_layout_btn"
+            android:layout_height="wrap_content"
+            android:text="LinearLayout示例"
+            android:layout_weight="1"
+            />
+
+        <Button
+            android:id="@+id/relative_layout_btn"
+            android:layout_height="wrap_content"
+            android:text="RelativeLayout示例"
+            android:layout_weight="1"
+            />
+    </TableRow>
+
+    <TableRow>
+        <Button
+            android:id="@+id/frame_layout_btn"
+            android:layout_height="wrap_content"
+            android:text="FrameLayout示例"
+            android:layout_weight="1"
+            />
+
+        <Button
+            android:id="@+id/table_layout_btn"
+            android:layout_height="wrap_content"
+            android:text="TableLayout示例"
+            android:layout_weight="1"
+            />
+
+    </TableRow>
+
+    <TableRow>
+        <Button
+            android:id="@+id/list_view_btn"
+            android:layout_height="wrap_content"
+            android:text="ListView示例"
+            android:layout_weight="1"
+            />
+    </TableRow>
 
 
-</LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+</TableLayout>

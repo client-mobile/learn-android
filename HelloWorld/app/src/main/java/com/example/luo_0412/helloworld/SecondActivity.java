@@ -17,6 +17,7 @@ import android.widget.Toast;
 
 public class SecondActivity extends Activity {
     private Button tel_btn;
+    private Button search_btn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +27,7 @@ public class SecondActivity extends Activity {
 
         TextView tel_num=(TextView)findViewById(R.id.tel_num);
         tel_btn = (Button) findViewById(R.id.tel_btn);
+        search_btn = (Button) findViewById(R.id.search_btn);
 
         Intent intent=getIntent();
         final String StringE=intent.getStringExtra("extra");
@@ -53,6 +55,20 @@ public class SecondActivity extends Activity {
                 startActivity(intent);
             }
         });
+
+        // 百度一下
+        search_btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Intent.ACTION_VIEW);
+                intent.setData(Uri.parse("http://www.baidu.com"));
+
+//                Uri uri = Uri.parse("geo:38.899533,-77.036476");
+//                Intent intent = new Intent(Intent.ACTION_VIEW,uri);
+                startActivity(intent);
+            }
+        });
+
     }
 
 }
