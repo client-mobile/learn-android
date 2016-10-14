@@ -13,6 +13,7 @@ public class MainActivity extends Activity implements OnClickListener {
     private Button bct2_btn;
     private Button file_persistence_btn;
     private Button shared_preferences_btn;
+    private Button sqlite_btn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +28,8 @@ public class MainActivity extends Activity implements OnClickListener {
         file_persistence_btn.setOnClickListener(this);
         shared_preferences_btn = (Button)findViewById(R.id.share_preferences_btn);
         shared_preferences_btn.setOnClickListener(this);
+        sqlite_btn = (Button)findViewById(R.id.sqlite_btn);
+        sqlite_btn.setOnClickListener(this);
 
     }
 
@@ -52,6 +55,11 @@ public class MainActivity extends Activity implements OnClickListener {
                 Intent intent4 = new Intent();
                 intent4.setClass(MainActivity.this, SharedPreferencesActivity.class);
                 startActivity(intent4);
+                break;
+            case R.id.sqlite_btn:
+                Intent intent5 = new Intent();
+                intent5.setClass(MainActivity.this, SQLiteActivity.class);
+                startActivity(intent5);
                 break;
             default:
                 break;

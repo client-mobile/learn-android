@@ -2,6 +2,8 @@ package com.example.luo_0412.learnmore;
 
 /**
  * Created by Luo_0412 on 2016/10/14.
+ * 记住密码功能还没有
+ * 用SharedPreferences实现
  */
 
 import android.content.Intent;

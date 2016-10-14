@@ -40,15 +40,15 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/file_persistence_btn"
         android:layout_toLeftOf="@id/file_persistence_btn"
-        android:text="SharedPrefs"/>
+        android:text="SharedPref"/>
 
     <Button
-        android:id="@+id/sql_btn"
+        android:id="@+id/sqlite_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/file_persistence_btn"
         android:layout_toRightOf="@id/file_persistence_btn"
-        android:text="sql"/>
+        android:text="SQLite测试"/>
 
 
 

@@ -24,6 +24,7 @@
         <activity android:name=".BroadcastOfflineActivity"></activity>
         <activity android:name=".FilePersistenceActivity"></activity>
         <activity android:name=".SharedPreferencesActivity"></activity>
+        <activity android:name=".SQLiteActivity"></activity>
 
         <receiver android:name=".BootCompleteReceiver" >
             <intent-filter>
