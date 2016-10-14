@@ -4,6 +4,8 @@ package com.example.luo_0412.helloworld;
  */
 
 import android.app.Activity;
+//import android.app.FragmentManager;
+//import android.app.FragmentTransaction;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
@@ -15,7 +17,7 @@ import android.widget.EditText;
 import android.view.View.OnClickListener;
 import android.widget.Toast;
 
-public class FirstActivity extends Activity {
+public class FirstActivity extends Activity implements OnClickListener {
     private Button send_btn;
     private Button widget_demo_btn;
     private Button widget_demo_btn2;
@@ -27,6 +29,7 @@ public class FirstActivity extends Activity {
     private Button myself_title_btn;
     private Button msg_ctl_btn;
     private Button fragment_ctl_btn;
+    private Button news_ctl_btn;
     private EditText tel_txt;
 
     @Override
@@ -38,125 +41,52 @@ public class FirstActivity extends Activity {
         setContentView(R.layout.first_layout);
 
         send_btn = (Button) findViewById(R.id.send_btn);
+        send_btn.setOnClickListener(this);
         widget_demo_btn = (Button) findViewById(R.id.widget_demo_btn);
+        widget_demo_btn.setOnClickListener(this);
         widget_demo_btn2 = (Button) findViewById(R.id.widget_demo_btn2);
+        widget_demo_btn2.setOnClickListener(this);
         linear_layout_btn = (Button) findViewById(R.id.linear_layout_btn);
+        linear_layout_btn.setOnClickListener(this);
         relative_layout_btn = (Button) findViewById(R.id.relative_layout_btn);
+        relative_layout_btn.setOnClickListener(this);
         frame_layout_btn = (Button) findViewById(R.id.frame_layout_btn);
+        frame_layout_btn.setOnClickListener(this);
         table_layout_btn = (Button) findViewById(R.id.table_layout_btn);
+        table_layout_btn.setOnClickListener(this);
         list_view_btn = (Button) findViewById(R.id.list_view_btn);
+        list_view_btn.setOnClickListener(this);
         myself_title_btn = (Button) findViewById(R.id.myself_title_btn);
+        myself_title_btn.setOnClickListener(this);
         msg_ctl_btn = (Button) findViewById(R.id.msg_ctl_btn);
+        msg_ctl_btn.setOnClickListener(this);
         fragment_ctl_btn = (Button) findViewById(R.id.fragment_ctl_btn);
-
-
+        fragment_ctl_btn.setOnClickListener(this);
+        news_ctl_btn = (Button) findViewById(R.id.news_ctl_btn);
+        news_ctl_btn.setOnClickListener(this);
 
         tel_txt = (EditText) findViewById(R.id.tel_txt);
 
-        // 发送数字的按钮
-        // 匿名类的方式
-        send_btn.setOnClickListener(new OnClickListener() {
-            @Override
-            public void onClick(View v) {
-//                tel_txt.setText("已发送号码给Mary！");
-                Intent intent=new Intent();
-                String content = tel_txt.getText().toString();  // 获取EditText的值
-                intent.putExtra("extra", content);
-                intent.setClass(FirstActivity.this, SecondActivity.class); // 跳转页面
-                startActivity(intent);
-            }
-        });
 
-        // 查看widget的按钮
-        widget_demo_btn.setOnClickListener(new OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent=new Intent();
-                intent.setClass(FirstActivity.this, WidgetDemoActivity.class);
-                startActivity(intent);
-            }
-        });
+//        fragment_ctl_btn.setOnClickListener(new OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent intent=new Intent();
+//                intent.setClass(FirstActivity.this, FragmentDemoActivity.class);
+//                startActivity(intent);
+//            }
+//        });
+//
+//
+//        news_ctl_btn.setOnClickListener(new OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent intent = new Intent();
+//                intent.setClass(FirstActivity.this, NewsDemoActivity.class);
+//                startActivity(intent);
+//            }
+//        });
 
-        widget_demo_btn2.setOnClickListener(new OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent=new Intent();
-                intent.setClass(FirstActivity.this, WidgetDemoActivity2.class);
-                startActivity(intent);
-            }
-        });
-
-        linear_layout_btn.setOnClickListener(new OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent=new Intent();
-                intent.setClass(FirstActivity.this, LinearLayoutDemoActivity.class);
-                startActivity(intent);
-            }
-        });
-
-        relative_layout_btn.setOnClickListener(new OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent=new Intent();
-                intent.setClass(FirstActivity.this, RelativeLayoutDemoActivity.class);
-                startActivity(intent);
-            }
-        });
-
-        frame_layout_btn.setOnClickListener(new OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent=new Intent();
-                intent.setClass(FirstActivity.this, FrameLayoutDemoActivity.class);
-                startActivity(intent);
-            }
-        });
-
-        table_layout_btn.setOnClickListener(new OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent=new Intent();
-                intent.setClass(FirstActivity.this, TableLayoutDemoActivity.class);
-                startActivity(intent);
-            }
-        });
-
-        list_view_btn.setOnClickListener(new OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent=new Intent();
-                intent.setClass(FirstActivity.this, ListViewDemoActivity.class);
-                startActivity(intent);
-            }
-        });
-
-        myself_title_btn.setOnClickListener(new OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent=new Intent();
-                intent.setClass(FirstActivity.this, MyselfTitleDemoActivity.class);
-                startActivity(intent);
-            }
-        });
-
-        msg_ctl_btn.setOnClickListener(new OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent=new Intent();
-                intent.setClass(FirstActivity.this, MsgActivity.class);
-                startActivity(intent);
-            }
-        });
-
-        fragment_ctl_btn.setOnClickListener(new OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent=new Intent();
-                intent.setClass(FirstActivity.this, FragmentDemoActivity.class);
-                startActivity(intent);
-            }
-        });
 
     }
 
@@ -181,6 +111,82 @@ public class FirstActivity extends Activity {
         }
         return true;
     }
+
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()) {
+            case R.id.send_btn:
+//                tel_txt.setText("已发送号码给Mary！");
+                Intent intent=new Intent();
+                String content = tel_txt.getText().toString();  // 获取EditText的值
+                intent.putExtra("extra", content);
+                intent.setClass(FirstActivity.this, SecondActivity.class); // 跳转页面
+                startActivity(intent);
+                break;
+            case R.id.widget_demo_btn:
+                Intent intent2 = new Intent();
+                intent2.setClass(FirstActivity.this, WidgetDemoActivity.class);
+                startActivity(intent2);
+                break;
+            case R.id.widget_demo_btn2:
+                Intent intent3=new Intent();
+                intent3.setClass(FirstActivity.this, WidgetDemoActivity2.class);
+                startActivity(intent3);
+                break;
+            case R.id.linear_layout_btn:
+                Intent intent4=new Intent();
+                intent4.setClass(FirstActivity.this, LinearLayoutDemoActivity.class);
+                startActivity(intent4);
+                break;
+            case R.id.relative_layout_btn:
+                Intent intent5=new Intent();
+                intent5.setClass(FirstActivity.this, RelativeLayoutDemoActivity.class);
+                startActivity(intent5);
+                break;
+            case R.id.frame_layout_btn:
+                Intent intent6=new Intent();
+                intent6.setClass(FirstActivity.this, FrameLayoutDemoActivity.class);
+                startActivity(intent6);
+                break;
+            case R.id.table_layout_btn:
+                Intent intent7=new Intent();
+                intent7.setClass(FirstActivity.this, TableLayoutDemoActivity.class);
+                startActivity(intent7);
+                break;
+            case R.id.list_view_btn:
+                Intent intent8=new Intent();
+                intent8.setClass(FirstActivity.this, ListViewDemoActivity.class);
+                startActivity(intent8);
+                break;
+            case R.id.myself_title_btn:
+                Intent intent9=new Intent();
+                intent9.setClass(FirstActivity.this, MyselfTitleDemoActivity.class);
+                startActivity(intent9);
+                break;
+            case R.id.msg_ctl_btn:
+                Intent intent10=new Intent();
+                intent10.setClass(FirstActivity.this, MsgActivity.class);
+                startActivity(intent10);
+                break;
+            case R.id.fragment_ctl_btn:
+//                Intent intent11=new Intent();
+//                intent11.setClass(FirstActivity.this, FragmentDemoActivity.class);
+//                startActivity(intent11);
+                                Intent intent_frag=new Intent();
+                intent_frag.setClass(FirstActivity.this, FragmentDemoActivity.class);
+                startActivity(intent_frag);
+                break;
+            case R.id.news_ctl_btn:
+                Intent intent12 = new Intent();
+                intent12.setClass(FirstActivity.this, NewsDemoActivity.class);
+                startActivity(intent12);
+                break;
+            default:
+                break;
+        }
+    }
+
+
 
 
 }

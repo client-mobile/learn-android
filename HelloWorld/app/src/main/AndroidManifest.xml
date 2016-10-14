@@ -34,6 +34,8 @@
         <activity android:name=".TableLayoutDemoActivity" ></activity>
         <activity android:name=".MyselfTitleDemoActivity" ></activity>
         <activity android:name=".MsgActivity" ></activity>
+        <activity android:name=".NewsDemoActivity" ></activity>
+        <activity android:name=".NewsContentActivity" ></activity>
 
 
         <meta-data

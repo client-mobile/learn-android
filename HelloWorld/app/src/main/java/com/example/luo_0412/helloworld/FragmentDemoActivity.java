@@ -7,7 +7,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
-//import android.widget.Toast;
 
 /**
  * Created by Luo_0412 on 2016/10/11.

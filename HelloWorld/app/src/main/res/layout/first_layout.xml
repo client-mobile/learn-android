@@ -119,6 +119,13 @@
             android:layout_weight="1"
             />
 
+        <Button
+            android:id="@+id/news_ctl_btn"
+            android:layout_height="wrap_content"
+            android:text="简易新闻"
+            android:layout_weight="1"
+            />
+
     </TableRow>
 
 
