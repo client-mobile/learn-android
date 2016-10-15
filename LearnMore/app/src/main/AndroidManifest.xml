@@ -5,6 +5,7 @@
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
     <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
 
     <application
         android:allowBackup="true"
@@ -25,6 +26,12 @@
         <activity android:name=".FilePersistenceActivity"></activity>
         <activity android:name=".SharedPreferencesActivity"></activity>
         <activity android:name=".SQLiteActivity"></activity>
+        <activity android:name=".ContactsTestActivity"></activity>
+
+        <provider
+            android:name="com.example.luo_0412.learnmore.DatabaseProvider"
+            android:authorities="com.example.luo_0412.learnmore.provider" >
+        </provider>
 
         <receiver android:name=".BootCompleteReceiver" >
             <intent-filter>
