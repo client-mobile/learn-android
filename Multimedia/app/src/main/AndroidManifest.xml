@@ -29,6 +29,9 @@
         <activity android:name="com.example.multimedia.ChoosePicTestActivity"></activity>
         <activity android:name="com.example.multimedia.PlayAudioTestActivity"></activity>
         <activity android:name="com.example.multimedia.PlayVideoTestActivity"></activity>
+        <activity android:name="com.example.multimedia.WebViewActivity"></activity>
+        <activity android:name="com.example.multimedia.ThreadTestActivity"></activity>
+        <activity android:name="com.example.multimedia.ServiceTestActivity"></activity>
 
     </application>
 

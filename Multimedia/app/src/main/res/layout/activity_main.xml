@@ -7,6 +7,7 @@
     android:orientation="vertical"
     tools:context="com.example.multimedia.MainActivity">
 
+
     <Button
         android:id="@+id/notification_test_btn"
         android:layout_width="wrap_content"
@@ -37,6 +38,34 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="视频播放"/>
+
+    <Button
+        android:id="@+id/thread_test_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="线程测试"/>
+
+    <Button
+        android:id="@+id/service_test_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="服务测试"/>
+
+    <Button
+        android:id="@+id/web_view_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="WebView"/>
+
+    <Button
+        android:id="@+id/network_test_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Network"/>
+
+
+
+
 
 
 </LinearLayout>
