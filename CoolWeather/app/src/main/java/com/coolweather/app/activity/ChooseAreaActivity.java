@@ -3,6 +3,10 @@ package com.coolweather.app.activity;
 /**
  * Created by Luo_0412 on 2016/10/16.
  * 貌似时灵时不灵
+ * 同步不及时
+ * 还一直卡
+ * libs 不要加support那个jar
+ * 貌似连四川、重庆的天气成功率比较高
  */
 
 import java.util.ArrayList;
