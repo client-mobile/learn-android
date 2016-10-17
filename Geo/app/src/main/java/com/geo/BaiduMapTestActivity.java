@@ -2,6 +2,8 @@ package com.geo;
 
 /**
  * Created by Luo_0412 on 2016/10/16.
+ * jar包还是 API key的问题？？
+ * 一点就奔溃
  */
 
 import java.util.List;
@@ -14,6 +16,7 @@ import android.location.Location;
 import android.location.LocationManager;
 import android.os.Bundle;
 import android.widget.Toast;
+//import android.util.ArrayMap;
 
 import com.baidu.mapapi.BMapManager;
 import com.baidu.mapapi.map.LocationData;
@@ -39,7 +42,7 @@ public class BaiduMapTestActivity extends Activity {
         super.onCreate(savedInstanceState);
         manager = new BMapManager(this);
         // API Key需要替换成你自己的
-        manager.init("", null);
+        manager.init("n1rKyTNbebx2N31OczUNsFayb95iHG6x", null);
         setContentView(R.layout.baidu_map_test);
         mapView = (MapView) findViewById(R.id.map_view);
         mapView.setBuiltInZoomControls(true);
