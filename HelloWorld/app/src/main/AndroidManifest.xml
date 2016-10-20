@@ -37,6 +37,19 @@
         <activity android:name=".NewsDemoActivity" ></activity>
         <activity android:name=".NewsContentActivity" ></activity>
 
+        <activity android:name=".LoginActivity" ></activity>
+        <activity android:name=".LoginShowActivity" ></activity>
+        <activity android:name=".SayHelloActivity" ></activity>
+        <activity android:name=".CheckboxActivity" ></activity>
+        <activity android:name=".CheckboxShowActivity" ></activity>
+        <activity android:name=".ClassChooseActivity" ></activity>
+        <activity android:name=".ClassListActivity" ></activity>
+        <activity android:name=".ClassList2Activity" ></activity>
+        <activity android:name=".CalculatorActivity" ></activity>
+
+
+
+
 
         <meta-data
             android:name="com.google.android.gms.version"

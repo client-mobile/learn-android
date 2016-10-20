@@ -128,6 +128,50 @@
 
     </TableRow>
 
+    <TableRow>
+        <Button
+            android:id="@+id/login_btn"
+            android:layout_height="wrap_content"
+            android:text="登录演示"
+            android:layout_weight="1"
+            />
+
+        <Button
+            android:id="@+id/say_hello_btn"
+            android:layout_height="wrap_content"
+            android:text="Say Hello"
+            android:layout_weight="1"
+            />
+
+    </TableRow>
+
+    <TableRow>
+        <Button
+            android:id="@+id/checkbox_btn"
+            android:layout_height="wrap_content"
+            android:text="选择爱好"
+            android:layout_weight="1"
+            />
+
+        <Button
+            android:id="@+id/class_choose_btn"
+            android:layout_height="wrap_content"
+            android:text="选择班级"
+            android:layout_weight="1"
+            />
+    </TableRow>
+
+    <TableRow>
+        <Button
+            android:id="@+id/calculator_btn"
+            android:layout_height="wrap_content"
+            android:text="简易计算器"
+            android:layout_weight="1"
+            />
+    </TableRow>
+
+
+
 
 
 

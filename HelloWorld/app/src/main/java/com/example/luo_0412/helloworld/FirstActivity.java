@@ -4,8 +4,6 @@ package com.example.luo_0412.helloworld;
  */
 
 import android.app.Activity;
-//import android.app.FragmentManager;
-//import android.app.FragmentTransaction;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
@@ -30,14 +28,20 @@ public class FirstActivity extends Activity implements OnClickListener {
     private Button msg_ctl_btn;
     private Button fragment_ctl_btn;
     private Button news_ctl_btn;
+    private Button login_btn;
+    private Button say_hello_btn;
+    private Button checkbox_btn;
+    private Button class_choose_btn;
+    private Button calculator_btn;
+
     private EditText tel_txt;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE);  // 隐藏标题
-                       // 一定要在setContentView()之前执行，不然会报错
-                                    // 现在的bug是怎么再次显示出来
+                                    // 在setContentView()之前执行
+                                    // 可是怎么再次显示出来啊
         setContentView(R.layout.first_layout);
 
         send_btn = (Button) findViewById(R.id.send_btn);
@@ -64,25 +68,27 @@ public class FirstActivity extends Activity implements OnClickListener {
         fragment_ctl_btn.setOnClickListener(this);
         news_ctl_btn = (Button) findViewById(R.id.news_ctl_btn);
         news_ctl_btn.setOnClickListener(this);
+        login_btn = (Button) findViewById(R.id.login_btn);
+        login_btn.setOnClickListener(this);
+        say_hello_btn = (Button) findViewById(R.id.say_hello_btn);
+        say_hello_btn.setOnClickListener(this);
+        checkbox_btn = (Button) findViewById(R.id.checkbox_btn);
+        checkbox_btn.setOnClickListener(this);
+        class_choose_btn = (Button) findViewById(R.id.class_choose_btn);
+        class_choose_btn.setOnClickListener(this);
+        calculator_btn = (Button) findViewById(R.id.calculator_btn);
+        calculator_btn.setOnClickListener(this);
 
         tel_txt = (EditText) findViewById(R.id.tel_txt);
 
-
+        /*
+         * 声名匿名按钮点击事件=====================================
+         */
 //        fragment_ctl_btn.setOnClickListener(new OnClickListener() {
 //            @Override
 //            public void onClick(View v) {
 //                Intent intent=new Intent();
 //                intent.setClass(FirstActivity.this, FragmentDemoActivity.class);
-//                startActivity(intent);
-//            }
-//        });
-//
-//
-//        news_ctl_btn.setOnClickListener(new OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Intent intent = new Intent();
-//                intent.setClass(FirstActivity.this, NewsDemoActivity.class);
 //                startActivity(intent);
 //            }
 //        });
@@ -172,7 +178,7 @@ public class FirstActivity extends Activity implements OnClickListener {
 //                Intent intent11=new Intent();
 //                intent11.setClass(FirstActivity.this, FragmentDemoActivity.class);
 //                startActivity(intent11);
-                                Intent intent_frag=new Intent();
+                Intent intent_frag=new Intent();
                 intent_frag.setClass(FirstActivity.this, FragmentDemoActivity.class);
                 startActivity(intent_frag);
                 break;
@@ -181,6 +187,30 @@ public class FirstActivity extends Activity implements OnClickListener {
                 intent12.setClass(FirstActivity.this, NewsDemoActivity.class);
                 startActivity(intent12);
                 break;
+            case R.id.login_btn:
+                Intent intent13 = new Intent();
+                intent13.setClass(FirstActivity.this, LoginActivity.class);
+                startActivity(intent13);
+                break;
+            case R.id.say_hello_btn:
+                Intent intent14 = new Intent();
+                intent14.setClass(FirstActivity.this, SayHelloActivity.class);
+                startActivity(intent14);
+                break;
+            case R.id.checkbox_btn:
+                Intent intent15 = new Intent();
+                intent15.setClass(FirstActivity.this, CheckboxActivity.class);
+                startActivity(intent15);
+                break;
+            case R.id.class_choose_btn:
+                Intent intent16 = new Intent();
+                intent16.setClass(FirstActivity.this, ClassChooseActivity.class);
+                startActivity(intent16);
+                break;
+            case R.id.calculator_btn:
+                Intent intent17 = new Intent();
+                intent17.setClass(FirstActivity.this, CalculatorActivity.class);
+                startActivity(intent17);
             default:
                 break;
         }

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:rowCount="8"
+    android:columnCount="4"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <!--第1行=====================-->
+    <EditText
+        android:hint="数值显示区"
+        android:layout_columnSpan="4"
+        android:layout_rowWeight="3"
+        android:layout_gravity="fill"
+        android:gravity="center"
+        android:background="#FFCCCC"
+        android:textSize="40sp"
+        />
+
+    <!--第2行======================-->
+    <Button
+        android:text="backspace"
+        android:layout_columnSpan="2"
+        android:layout_gravity="fill" />
+    <Button
+        android:text="CE"
+        android:layout_columnSpan="2"
+        android:layout_columnWeight="2"
+        android:layout_gravity="fill" />
+
+    <!--第3行========================-->
+    <Button
+        android:text="1" />
+    <Button
+        android:text="2" />
+    <Button
+        android:text="3" />
+    <Button
+        android:text="/"
+        android:layout_gravity="fill_horizontal"/>
+
+    <!--第4行 ========================-->
+    <Button
+        android:text="4" />
+    <Button
+        android:text="5" />
+    <Button
+        android:text="6" />
+    <Button
+        android:text="x"
+        android:layout_gravity="fill_horizontal"/>
+
+    <!--第5行 ====================== -->
+    <Button
+        android:text="7" />
+    <Button
+        android:text="8" />
+    <Button
+        android:text="9" />
+    <Button
+        android:text="-"
+        android:layout_gravity="fill_horizontal" />
+
+    <!--第6 、7行 ====================== -->
+    <Button
+        android:text="0"
+        android:layout_columnWeight="1"
+        android:layout_gravity="fill"
+        android:layout_columnSpan="2" />
+    <Button
+        android:text="." />
+    <Button
+        android:text="+"
+        android:layout_rowSpan="2"
+        android:layout_gravity="fill" />
+
+    <Button
+        android:text="="
+        android:layout_columnSpan="3"
+        android:layout_gravity="fill" />
+
+    <!--第8行 =================== -->
+    <Button
+        android:text="About"
+        android:layout_columnSpan="4"
+        android:layout_gravity="fill_horizontal"/>
+
+
+</GridLayout>
