@@ -22,8 +22,8 @@ public class CheckboxActivity extends Activity implements OnClickListener {
     private Button hobby_submit_btn;
 
     String content = "";
-    CheckBox movieCbx, musicCbx, readCbx;
     
+    CheckBox movieCbx, musicCbx, readCbx;
     List<CheckBox> checkBoxs = new ArrayList<CheckBox>();
 
     @Override

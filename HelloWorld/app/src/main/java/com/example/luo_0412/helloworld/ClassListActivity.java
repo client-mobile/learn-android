@@ -29,11 +29,9 @@ public class ClassListActivity extends Activity implements OnClickListener {
 
 
 
-            ArrayAdapter<String>    adapter = new ArrayAdapter<>(
-                    ClassListActivity.this,
-                    android.R.layout.simple_list_item_1, class1);
-
-
+        ArrayAdapter<String>    adapter = new ArrayAdapter<>(
+                ClassListActivity.this,
+                android.R.layout.simple_list_item_1, class1);
         ListView listView = (ListView) findViewById(R.id.class_list_view);
         listView.setAdapter(adapter);
     }
