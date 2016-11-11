@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">UIWidgetsApp</string>
+    <string name="textview_name">这是textview的演示</string>
+    <string name="edit_ctl_btn">取值显示</string>
+</resources>

@@ -7,23 +7,324 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8fec6b4f-a001-4d1d-82c4-c8d8e20091eb" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/baidumapapi_v2_3_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/commons_codec_1_6.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/commons_logging_1_1_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/fluent_hc_4_2_5.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/httpclient_4_2_5.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/httpclient_cache_4_2_5.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/httpcore_4_2_4.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/httpmime_4_2_5.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/support_v4_18_0_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../HelloWorld/.idea/modules.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../HelloWorld/.idea/vcs.xml" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../BroadcastApp/app/src/main/res/mipmap-hdpi/ic_launcher.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../BroadcastApp/app/src/main/res/mipmap-mdpi/ic_launcher.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../BroadcastApp/app/src/main/res/mipmap-xhdpi/ic_launcher.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../BroadcastApp/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../BroadcastApp/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../BroadcastApp/gradle/wrapper/gradle-wrapper.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../BroadcastApp/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../BroadcastApp/.idea/compiler.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../BroadcastApp/.idea/copyright/profiles_settings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../BroadcastApp/.idea/encodings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../BroadcastApp/.idea/gradle.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../BroadcastApp/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../BroadcastApp/.idea/modules.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../BroadcastApp/.idea/runConfigurations.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../BroadcastApp/app/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../BroadcastApp/app/build.gradle" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../BroadcastApp/app/proguard-rules.pro" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../BroadcastApp/app/src/androidTest/java/cn/luojs/broadcastapp/ExampleInstrumentedTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../BroadcastApp/app/src/main/AndroidManifest.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../BroadcastApp/app/src/main/java/cn/luojs/broadcastapp/MainActivity.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../BroadcastApp/app/src/main/res/layout/activity_main.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../BroadcastApp/app/src/main/res/values-w820dp/dimens.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../BroadcastApp/app/src/main/res/values/colors.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../BroadcastApp/app/src/main/res/values/dimens.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../BroadcastApp/app/src/main/res/values/strings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../BroadcastApp/app/src/main/res/values/styles.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../BroadcastApp/app/src/test/java/cn/luojs/broadcastapp/ExampleUnitTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../BroadcastApp/build.gradle" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../BroadcastApp/gradle.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../BroadcastApp/gradle/wrapper/gradle-wrapper.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../BroadcastApp/gradlew" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../BroadcastApp/gradlew.bat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../BroadcastApp/settings.gradle" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../HelloWorld/app/src/main/java/com/example/luo_0412/helloworld/Tourism.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../HelloWorld/app/src/main/java/com/example/luo_0412/helloworld/TourismActivity.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../HelloWorld/app/src/main/java/com/example/luo_0412/helloworld/TourismAdapter.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../HelloWorld/app/src/main/res/layout/tourism_item.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../HelloWorld/app/src/main/res/layout/tourism_layout.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Tourism/.idea/modules.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Tourism/.idea/runConfigurations.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Tourism/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Tourism/app/src/main/java/cn/luojs/tourism/Tourism.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Tourism/app/src/main/java/cn/luojs/tourism/TourismAdapter.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Tourism/app/src/main/java/cn/luojs/tourism/TourismContentActivity.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Tourism/app/src/main/java/cn/luojs/tourism/TourismContentFragment.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Tourism/app/src/main/java/cn/luojs/tourism/TourismNameFragment.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Tourism/app/src/main/res/layout/tourism_content.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Tourism/app/src/main/res/layout/tourism_content_frag.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Tourism/app/src/main/res/layout/tourism_item.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Tourism/app/src/main/res/layout/tourism_name_frag.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../BroadcastTest2/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../BroadcastTest2/.idea/compiler.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../BroadcastTest2/.idea/copyright/profiles_settings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../BroadcastTest2/.idea/encodings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../BroadcastTest2/.idea/gradle.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../BroadcastTest2/.idea/misc.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../BroadcastTest2/.idea/modules.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../BroadcastTest2/.idea/runConfigurations.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../BroadcastTest2/.idea/vcs.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../BroadcastTest2/app/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../BroadcastTest2/app/build.gradle" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../BroadcastTest2/app/proguard-rules.pro" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../BroadcastTest2/app/src/androidTest/java/com/example/luo_0412/broadcasttest2/ExampleInstrumentedTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../BroadcastTest2/app/src/main/AndroidManifest.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../BroadcastTest2/app/src/main/java/com/example/luo_0412/broadcasttest2/AnotherBroadcastReceiver.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../BroadcastTest2/app/src/main/java/com/example/luo_0412/broadcasttest2/MainActivity.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../BroadcastTest2/app/src/main/res/layout/activity_main.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../BroadcastTest2/app/src/main/res/menu/main.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../BroadcastTest2/app/src/main/res/mipmap-hdpi/ic_launcher.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../BroadcastTest2/app/src/main/res/mipmap-mdpi/ic_launcher.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../BroadcastTest2/app/src/main/res/mipmap-xhdpi/ic_launcher.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../BroadcastTest2/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../BroadcastTest2/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../BroadcastTest2/app/src/main/res/values-w820dp/dimens.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../BroadcastTest2/app/src/main/res/values/colors.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../BroadcastTest2/app/src/main/res/values/dimens.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../BroadcastTest2/app/src/main/res/values/strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../BroadcastTest2/app/src/main/res/values/styles.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../BroadcastTest2/app/src/test/java/com/example/luo_0412/broadcasttest2/ExampleUnitTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../BroadcastTest2/build.gradle" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../BroadcastTest2/gradle.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../BroadcastTest2/gradle/wrapper/gradle-wrapper.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../BroadcastTest2/gradle/wrapper/gradle-wrapper.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../BroadcastTest2/gradlew" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../BroadcastTest2/gradlew.bat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../BroadcastTest2/settings.gradle" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo2/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo2/.idea/.name" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo2/.idea/compiler.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo2/.idea/copyright/profiles_settings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo2/.idea/encodings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo2/.idea/gradle.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo2/.idea/inspectionProfiles/Project_Default.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo2/.idea/inspectionProfiles/profiles_settings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo2/.idea/misc.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo2/.idea/modules.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo2/.idea/runConfigurations.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo2/.idea/vcs.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo2/app/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo2/app/build.gradle" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo2/app/proguard-rules.pro" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo2/app/src/androidTest/java/com/jay/fragmentdemo2/ApplicationTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo2/app/src/main/AndroidManifest.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo2/app/src/main/java/com/jay/fragmentdemo2/MainActivity.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo2/app/src/main/java/com/jay/fragmentdemo2/MyFragment.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo2/app/src/main/res/drawable/tab_menu_better.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo2/app/src/main/res/drawable/tab_menu_bg.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo2/app/src/main/res/drawable/tab_menu_channel.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo2/app/src/main/res/drawable/tab_menu_message.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo2/app/src/main/res/drawable/tab_menu_setting.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo2/app/src/main/res/drawable/tab_menu_text.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo2/app/src/main/res/layout/activity_main.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo2/app/src/main/res/layout/fg_content.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo2/app/src/main/res/menu/menu_main.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo2/app/src/main/res/mipmap-hdpi/ic_launcher.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo2/app/src/main/res/mipmap-mdpi/ic_launcher.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo2/app/src/main/res/mipmap-xhdpi/ic_launcher.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo2/app/src/main/res/mipmap-xhdpi/tab_better_normal.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo2/app/src/main/res/mipmap-xhdpi/tab_better_pressed.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo2/app/src/main/res/mipmap-xhdpi/tab_channel_normal.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo2/app/src/main/res/mipmap-xhdpi/tab_channel_pressed.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo2/app/src/main/res/mipmap-xhdpi/tab_message_normal.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo2/app/src/main/res/mipmap-xhdpi/tab_message_pressed.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo2/app/src/main/res/mipmap-xhdpi/tab_my_normal.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo2/app/src/main/res/mipmap-xhdpi/tab_my_pressed.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo2/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo2/app/src/main/res/mipmap-xxhdpi/tab_better_normal.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo2/app/src/main/res/mipmap-xxhdpi/tab_better_pressed.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo2/app/src/main/res/mipmap-xxhdpi/tab_channel_normal.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo2/app/src/main/res/mipmap-xxhdpi/tab_channel_pressed.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo2/app/src/main/res/mipmap-xxhdpi/tab_message_normal.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo2/app/src/main/res/mipmap-xxhdpi/tab_message_pressed.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo2/app/src/main/res/mipmap-xxhdpi/tab_my_normal.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo2/app/src/main/res/mipmap-xxhdpi/tab_my_pressed.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo2/app/src/main/res/values-w820dp/dimens.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo2/app/src/main/res/values/color.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo2/app/src/main/res/values/dimens.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo2/app/src/main/res/values/strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo2/app/src/main/res/values/styles.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo2/build.gradle" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo2/gradle.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo2/gradle/wrapper/gradle-wrapper.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo2/gradle/wrapper/gradle-wrapper.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo2/gradlew" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo2/gradlew.bat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo2/settings.gradle" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo3/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo3/.idea/.name" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo3/.idea/compiler.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo3/.idea/copyright/profiles_settings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo3/.idea/encodings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo3/.idea/gradle.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo3/.idea/inspectionProfiles/Project_Default.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo3/.idea/inspectionProfiles/profiles_settings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo3/.idea/misc.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo3/.idea/modules.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo3/.idea/runConfigurations.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo3/.idea/vcs.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo3/app/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo3/app/build.gradle" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo3/app/proguard-rules.pro" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo3/app/src/androidTest/java/com/jay/fragmentdemo3/ApplicationTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo3/app/src/main/AndroidManifest.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo3/app/src/main/java/com/jay/fragmentdemo3/MainActivity.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo3/app/src/main/java/com/jay/fragmentdemo3/MyFragment.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo3/app/src/main/res/drawable/tab_menu_better.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo3/app/src/main/res/drawable/tab_menu_bg.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo3/app/src/main/res/drawable/tab_menu_channel.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo3/app/src/main/res/drawable/tab_menu_message.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo3/app/src/main/res/drawable/tab_menu_setting.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo3/app/src/main/res/drawable/tab_menu_text.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo3/app/src/main/res/layout/activity_main.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo3/app/src/main/res/layout/fg_my.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo3/app/src/main/res/menu/menu_main.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo3/app/src/main/res/mipmap-hdpi/ic_launcher.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo3/app/src/main/res/mipmap-mdpi/ic_launcher.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo3/app/src/main/res/mipmap-xhdpi/ic_launcher.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo3/app/src/main/res/mipmap-xhdpi/tab_better_normal.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo3/app/src/main/res/mipmap-xhdpi/tab_better_pressed.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo3/app/src/main/res/mipmap-xhdpi/tab_channel_normal.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo3/app/src/main/res/mipmap-xhdpi/tab_channel_pressed.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo3/app/src/main/res/mipmap-xhdpi/tab_message_normal.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo3/app/src/main/res/mipmap-xhdpi/tab_message_pressed.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo3/app/src/main/res/mipmap-xhdpi/tab_my_normal.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo3/app/src/main/res/mipmap-xhdpi/tab_my_pressed.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo3/app/src/main/res/mipmap-xxhdpi/bg_num.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo3/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo3/app/src/main/res/mipmap-xxhdpi/partner_red.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo3/app/src/main/res/mipmap-xxhdpi/tab_better_normal.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo3/app/src/main/res/mipmap-xxhdpi/tab_better_pressed.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo3/app/src/main/res/mipmap-xxhdpi/tab_channel_normal.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo3/app/src/main/res/mipmap-xxhdpi/tab_channel_pressed.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo3/app/src/main/res/mipmap-xxhdpi/tab_message_normal.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo3/app/src/main/res/mipmap-xxhdpi/tab_message_pressed.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo3/app/src/main/res/mipmap-xxhdpi/tab_my_normal.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo3/app/src/main/res/mipmap-xxhdpi/tab_my_pressed.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo3/app/src/main/res/values-w820dp/dimens.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo3/app/src/main/res/values/color.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo3/app/src/main/res/values/dimens.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo3/app/src/main/res/values/strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo3/app/src/main/res/values/styles.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo3/build.gradle" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo3/gradle.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo3/gradle/wrapper/gradle-wrapper.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo3/gradle/wrapper/gradle-wrapper.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo3/gradlew" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo3/gradlew.bat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo3/settings.gradle" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo4/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo4/.idea/.name" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo4/.idea/compiler.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo4/.idea/copyright/profiles_settings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo4/.idea/encodings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo4/.idea/gradle.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo4/.idea/inspectionProfiles/Project_Default.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo4/.idea/inspectionProfiles/profiles_settings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo4/.idea/misc.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo4/.idea/modules.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo4/.idea/runConfigurations.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo4/.idea/vcs.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo4/app/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo4/app/build.gradle" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo4/app/proguard-rules.pro" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo4/app/src/androidTest/java/com/jay/fragmentdemo4/ApplicationTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo4/app/src/main/AndroidManifest.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo4/app/src/main/java/com/jay/fragmentdemo4/MainActivity.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo4/app/src/main/java/com/jay/fragmentdemo4/MyFragment1.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo4/app/src/main/java/com/jay/fragmentdemo4/MyFragment2.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo4/app/src/main/java/com/jay/fragmentdemo4/MyFragment3.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo4/app/src/main/java/com/jay/fragmentdemo4/MyFragment4.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo4/app/src/main/java/com/jay/fragmentdemo4/MyFragmentPagerAdapter.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo4/app/src/main/res/drawable/tab_menu_better.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo4/app/src/main/res/drawable/tab_menu_bg.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo4/app/src/main/res/drawable/tab_menu_channel.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo4/app/src/main/res/drawable/tab_menu_message.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo4/app/src/main/res/drawable/tab_menu_setting.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo4/app/src/main/res/drawable/tab_menu_text.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo4/app/src/main/res/layout/activity_main.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo4/app/src/main/res/layout/fg_content.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo4/app/src/main/res/menu/menu_main.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo4/app/src/main/res/mipmap-hdpi/ic_launcher.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo4/app/src/main/res/mipmap-mdpi/ic_launcher.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo4/app/src/main/res/mipmap-xhdpi/ic_launcher.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo4/app/src/main/res/mipmap-xhdpi/tab_better_normal.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo4/app/src/main/res/mipmap-xhdpi/tab_better_pressed.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo4/app/src/main/res/mipmap-xhdpi/tab_channel_normal.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo4/app/src/main/res/mipmap-xhdpi/tab_channel_pressed.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo4/app/src/main/res/mipmap-xhdpi/tab_message_normal.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo4/app/src/main/res/mipmap-xhdpi/tab_message_pressed.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo4/app/src/main/res/mipmap-xhdpi/tab_my_normal.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo4/app/src/main/res/mipmap-xhdpi/tab_my_pressed.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo4/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo4/app/src/main/res/values-w820dp/dimens.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo4/app/src/main/res/values/color.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo4/app/src/main/res/values/dimens.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo4/app/src/main/res/values/strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo4/app/src/main/res/values/styles.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo4/build.gradle" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo4/gradle.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo4/gradle/wrapper/gradle-wrapper.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo4/gradle/wrapper/gradle-wrapper.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo4/gradlew" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo4/gradlew.bat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo4/settings.gradle" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo5/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo5/.idea/.name" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo5/.idea/compiler.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo5/.idea/copyright/profiles_settings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo5/.idea/encodings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo5/.idea/gradle.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo5/.idea/inspectionProfiles/Project_Default.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo5/.idea/inspectionProfiles/profiles_settings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo5/.idea/misc.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo5/.idea/modules.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo5/.idea/runConfigurations.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo5/.idea/vcs.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo5/app/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo5/app/build.gradle" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo5/app/proguard-rules.pro" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo5/app/src/androidTest/java/com/jay/fragmentdemo4/ApplicationTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo5/app/src/main/AndroidManifest.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo5/app/src/main/java/com/jay/fragmentdemo4/Data.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo5/app/src/main/java/com/jay/fragmentdemo4/MainActivity.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo5/app/src/main/java/com/jay/fragmentdemo4/MyAdapter.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo5/app/src/main/java/com/jay/fragmentdemo4/NewContentFragment.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo5/app/src/main/java/com/jay/fragmentdemo4/NewListFragment.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo5/app/src/main/res/anim/fragment_slide_left_enter.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo5/app/src/main/res/anim/fragment_slide_left_exit.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo5/app/src/main/res/anim/fragment_slide_right_enter.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo5/app/src/main/res/anim/fragment_slide_right_exit.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo5/app/src/main/res/layout/activity_main.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo5/app/src/main/res/layout/fg_content.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo5/app/src/main/res/layout/fg_newlist.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo5/app/src/main/res/layout/list_item.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo5/app/src/main/res/menu/menu_main.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo5/app/src/main/res/mipmap-hdpi/ic_launcher.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo5/app/src/main/res/mipmap-mdpi/ic_launcher.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo5/app/src/main/res/mipmap-xhdpi/ic_launcher.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo5/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo5/app/src/main/res/values-w820dp/dimens.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo5/app/src/main/res/values/color.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo5/app/src/main/res/values/dimens.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo5/app/src/main/res/values/strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo5/app/src/main/res/values/styles.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo5/build.gradle" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo5/gradle.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo5/gradle/wrapper/gradle-wrapper.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo5/gradle/wrapper/gradle-wrapper.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo5/gradlew" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo5/gradlew.bat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FragmentDemo5/settings.gradle" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HelloWorld/.idea/compiler.xml" afterPath="$PROJECT_DIR$/../HelloWorld/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HelloWorld/.idea/encodings.xml" afterPath="$PROJECT_DIR$/../HelloWorld/.idea/encodings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HelloWorld/.idea/gradle.xml" afterPath="$PROJECT_DIR$/../HelloWorld/.idea/gradle.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../CoolWeather/.idea/vcs.xml" afterPath="$PROJECT_DIR$/../CoolWeather/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../CoolWeather/build.gradle" afterPath="$PROJECT_DIR$/../CoolWeather/build.gradle" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HelloWorld/.idea/misc.xml" afterPath="$PROJECT_DIR$/../HelloWorld/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HelloWorld/.idea/runConfigurations.xml" afterPath="$PROJECT_DIR$/../HelloWorld/.idea/runConfigurations.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HelloWorld/app/src/main/java/com/example/luo_0412/helloworld/FirstActivity.java" afterPath="$PROJECT_DIR$/../HelloWorld/app/src/main/java/com/example/luo_0412/helloworld/FirstActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HelloWorld/app/src/main/res/layout/first_layout.xml" afterPath="$PROJECT_DIR$/../HelloWorld/app/src/main/res/layout/first_layout.xml" />
     </list>
     <ignored path="BaiduMapTest.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -56,7 +357,21 @@
     <favorites_list name="BaiduMapTest" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf>
+      <file leaf-file-name="AndroidManifest.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="171">
+              <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="android-manifest">
+            <state />
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -1590,8 +1905,8 @@
       <list>
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/baidumaptest/LocationTestActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/baidumaptest/FirstActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/baidumaptest/MainActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
       </list>
     </option>
   </component>
@@ -1627,11 +1942,10 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane />
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="AndroidView">
         <subPane>
           <PATH>
@@ -1649,9 +1963,28 @@
               <option name="myItemId" value="BaiduMapTest" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BaiduMapTest" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="manifests" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidManifestsGroupNode" />
+            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1980,7 +2313,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="54" y="-8" width="1320" height="784" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1991,8 +2324,8 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -2004,8 +2337,8 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -2078,9 +2411,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2104,7 +2434,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="57">
           <caret line="3" column="30" selection-start-line="3" selection-start-column="30" selection-end-line="3" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2112,7 +2441,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
       <provider editor-type-id="android-designer2">
@@ -2134,7 +2462,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
           <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2150,9 +2477,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2176,7 +2500,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="57">
           <caret line="3" column="30" selection-start-line="3" selection-start-column="30" selection-end-line="3" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2184,7 +2507,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
       <provider editor-type-id="android-designer2">
@@ -2206,7 +2528,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
           <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2222,9 +2543,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1691">
           <caret line="107" column="27" selection-start-line="107" selection-start-column="27" selection-end-line="107" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2248,7 +2566,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="57">
           <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2256,7 +2573,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2290,7 +2606,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
       <provider editor-type-id="android-designer2">
@@ -2301,7 +2616,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
           <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2309,20 +2623,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
           <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-      <provider editor-type-id="android-manifest">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="83" selection-start-line="10" selection-start-column="83" selection-end-line="10" selection-end-column="83" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2330,7 +2630,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="57">
           <caret line="3" column="30" selection-start-line="3" selection-start-column="30" selection-end-line="3" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2340,6 +2639,17 @@
           <caret line="21" column="4" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
           <folding />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-manifest">
+        <state />
       </provider>
     </entry>
   </component>
