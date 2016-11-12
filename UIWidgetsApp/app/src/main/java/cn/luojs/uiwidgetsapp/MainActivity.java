@@ -98,6 +98,22 @@ public class MainActivity extends AppCompatActivity {
                         it.setClass(MainActivity.this, MessageActivity.class);
                         startActivity(it);
                         break;
+                    case 14:
+                        it.setClass(MainActivity.this, TourismActivity.class);
+                        startActivity(it);
+                        break;
+                    case 15:
+                        it.setClass(MainActivity.this, ListViewDataADESActivity.class);
+                        startActivity(it);
+                        break;
+                    case 16:
+                        it.setClass(MainActivity.this, ReusableAdapterActivity.class);
+                        startActivity(it);
+                        break;
+                    case 17:
+                        it.setClass(MainActivity.this, BottomNavBarActivity.class);
+                        startActivity(it);
+                        break;
                     default:
                         Toast.makeText(MainActivity.this, widget.getName(),
                                 Toast.LENGTH_SHORT).show();
@@ -111,36 +127,42 @@ public class MainActivity extends AppCompatActivity {
      * 初始化函数，给list添加子项
      */
     private void initWidgets() {
-        Widget textViewDemo = new Widget("TextView(文本框 样式)", R.mipmap.apple_pic);
+        Widget textViewDemo = new Widget("TextView 自动谈些", R.mipmap.apple_pic);
         widgetList.add(textViewDemo);
-        Widget imgViewDemo = new Widget("ImageView(图片 src改变)", R.mipmap.banana_pic);
+        Widget imgViewDemo = new Widget("ImageView src改变", R.mipmap.banana_pic);
         widgetList.add(imgViewDemo);
-        Widget editTextDemo = new Widget("EditText(编辑框 取值)", R.mipmap.orange_pic);
+        Widget editTextDemo = new Widget("EditText 取值监听", R.mipmap.orange_pic);
         widgetList.add(editTextDemo);
-        Widget pgbarDemo = new Widget("ProgressBar(进度条 改变进度)", R.mipmap.watermelon_pic);
+        Widget pgbarDemo = new Widget("ProgressBar 改变进度", R.mipmap.watermelon_pic);
         widgetList.add(pgbarDemo);
-        Widget ratingbarDemo = new Widget("RatingBar(评分 半颗星)", R.mipmap.pear_pic);
+        Widget ratingbarDemo = new Widget("RatingBar 半颗星", R.mipmap.pear_pic);
         widgetList.add(ratingbarDemo);
-        Widget dialogDemo = new Widget("Dialog(对话框 非点不可)", R.mipmap.grape_pic);
+        Widget dialogDemo = new Widget("Dialog 非点不可", R.mipmap.grape_pic);
         widgetList.add(dialogDemo);
-        Widget radioBtn = new Widget("RadioButton(单选框 班级名单)", R.mipmap.pineapple_pic);
+        Widget radioBtn = new Widget("RadioButton 班级名单", R.mipmap.pineapple_pic);
         widgetList.add(radioBtn);
-        Widget checkbox = new Widget("CheckBox(复选框 兴趣爱好)", R.mipmap.strawberry_pic);
+        Widget checkbox = new Widget("CheckBox 兴趣爱好", R.mipmap.strawberry_pic);
         widgetList.add(checkbox);
-        Widget calculator = new Widget("LinearLayout(线性布局 嵌套)", R.mipmap.cherry_pic);
+        Widget calculator = new Widget("LinearLayout 嵌套布局  计算器", R.mipmap.cherry_pic);
         widgetList.add(calculator);
-        Widget frameLayout = new Widget("FrameLayout(帧布局 重叠)", R.mipmap.mango_pic);
+        Widget frameLayout = new Widget("FrameLayout 重叠", R.mipmap.mango_pic);
         widgetList.add(frameLayout);
-        Widget tableLayout = new Widget("TableLoyout(表格布局 登录)", R.mipmap.apple_pic);
+        Widget tableLayout = new Widget("TableLoyout 登录", R.mipmap.apple_pic);
         widgetList.add(tableLayout);
-        Widget relativeLayout = new Widget("RelativeLayout(相对布局 梅花桩)", R.mipmap.banana_pic);
+        Widget relativeLayout = new Widget("RelativeLayout 梅花桩", R.mipmap.banana_pic);
         widgetList.add(relativeLayout);
         Widget myselfTitle = new Widget("自定义标题栏", R.mipmap.orange_pic);
         widgetList.add(myselfTitle);
         Widget message = new Widget("精美聊天界面", R.mipmap.watermelon_pic);
         widgetList.add(message);
-        Widget pear2 = new Widget("Pear", R.mipmap.pear_pic);
-        widgetList.add(pear2);
+        Widget tourism = new Widget("名胜古迹", R.mipmap.pear_pic);
+        widgetList.add(tourism);
+        Widget listViewData = new Widget("listView 增删改查", R.mipmap.pear_pic);
+        widgetList.add(listViewData);
+        Widget resuableLV = new Widget("listView 可复用 可定制", R.mipmap.pear_pic);
+        widgetList.add(resuableLV);
+        Widget bottomNav = new Widget("底部导航栏", R.mipmap.pear_pic);
+        widgetList.add(bottomNav);
     }
 
 }

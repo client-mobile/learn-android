@@ -1,3 +1,6 @@
+# 忽略tmp文件夹下所有文件
+/tmp/*
+
 # OSX  
 *.DS_Store  
   

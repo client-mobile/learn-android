@@ -25,12 +25,22 @@
         <activity android:name=".RadioButtonShowActivity"></activity>
         <activity android:name=".CheckBoxActivity"></activity>
         <activity android:name=".CheckBoxShowActivity"></activity>
+
         <activity android:name=".CalculatorActivity"></activity>
         <activity android:name=".FrameLayoutActivity"></activity>
         <activity android:name=".TableLayoutActivity"></activity>
         <activity android:name=".RelativeLayoutActivity"></activity>
         <activity android:name=".MyselfTitleActivity"></activity>
+
         <activity android:name=".MessageActivity"></activity>
+
+        <activity android:name=".TourismActivity"></activity>
+        <activity android:name=".TourismContentActivity"></activity>
+
+        <activity android:name=".ListViewDataADESActivity"></activity>
+        <activity android:name=".ReusableAdapterActivity"></activity>
+
+        <activity android:name=".BottomNavBarActivity"></activity>
     </application>
 
 </manifest>
