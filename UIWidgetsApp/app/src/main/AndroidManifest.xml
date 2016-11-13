@@ -41,6 +41,9 @@
         <activity android:name=".ReusableAdapterActivity"></activity>
 
         <activity android:name=".BottomNavBarActivity"></activity>
+        <activity android:name=".ButtonActivity"></activity>
+
+        <activity android:name=".SpinnerActivity"></activity>
     </application>
 
 </manifest>

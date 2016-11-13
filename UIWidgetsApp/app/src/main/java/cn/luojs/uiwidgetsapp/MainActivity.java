@@ -114,6 +114,14 @@ public class MainActivity extends AppCompatActivity {
                         it.setClass(MainActivity.this, BottomNavBarActivity.class);
                         startActivity(it);
                         break;
+                    case 18:
+                        it.setClass(MainActivity.this, ButtonActivity.class);
+                        startActivity(it);
+                        break;
+                    case 19:
+                        it.setClass(MainActivity.this, SpinnerActivity.class);
+                        startActivity(it);
+                        break;
                     default:
                         Toast.makeText(MainActivity.this, widget.getName(),
                                 Toast.LENGTH_SHORT).show();
@@ -163,6 +171,10 @@ public class MainActivity extends AppCompatActivity {
         widgetList.add(resuableLV);
         Widget bottomNav = new Widget("底部导航栏", R.mipmap.pear_pic);
         widgetList.add(bottomNav);
+        Widget btnSwitch = new Widget("按钮类", R.mipmap.pear_pic);
+        widgetList.add(btnSwitch);
+        Widget spinner = new Widget("spinner 选择段位", R.mipmap.pear_pic);
+        widgetList.add(spinner);
     }
 
 }
