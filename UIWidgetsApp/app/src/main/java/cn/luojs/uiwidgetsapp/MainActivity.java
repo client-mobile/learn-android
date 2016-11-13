@@ -12,6 +12,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import cn.luojs.uiwidgetsapp.adapter.WidgetAdapter;
+import cn.luojs.uiwidgetsapp.btn.AutoCompleteTextViewActivity;
 import cn.luojs.uiwidgetsapp.btn.ButtonActivity;
 import cn.luojs.uiwidgetsapp.btn.CheckBoxActivity;
 import cn.luojs.uiwidgetsapp.btn.EditTextActivity;
@@ -27,6 +28,7 @@ import cn.luojs.uiwidgetsapp.layout.FrameLayoutActivity;
 import cn.luojs.uiwidgetsapp.layout.MyselfTitleActivity;
 import cn.luojs.uiwidgetsapp.layout.RelativeLayoutActivity;
 import cn.luojs.uiwidgetsapp.layout.TableLayoutActivity;
+import cn.luojs.uiwidgetsapp.listview.ExpandableListViewActivity;
 import cn.luojs.uiwidgetsapp.listview.ListViewDataADESActivity;
 import cn.luojs.uiwidgetsapp.listview.MessageActivity;
 import cn.luojs.uiwidgetsapp.listview.ReusableAdapterActivity;
@@ -180,6 +182,14 @@ public class MainActivity extends AppCompatActivity {
                         it.setClass(MainActivity.this, DrawerLayout2Activity.class);
                         startActivity(it);
                         break;
+                    case 27:
+                        it.setClass(MainActivity.this, ExpandableListViewActivity.class);
+                        startActivity(it);
+                        break;
+                    case 28:
+                        it.setClass(MainActivity.this, AutoCompleteTextViewActivity.class);
+                        startActivity(it);
+                        break;
                     default:
                         Toast.makeText(MainActivity.this, widget.getName(),
                                 Toast.LENGTH_SHORT).show();
@@ -247,6 +257,10 @@ public class MainActivity extends AppCompatActivity {
         widgetList.add(dl);
         Widget dl2 = new Widget("DrawerLayout2", R.mipmap.pear_pic);
         widgetList.add(dl2);
+        Widget elv = new Widget("可折叠ListView", R.mipmap.pear_pic);
+        widgetList.add(elv);
+        Widget autoTv = new Widget("可自动填充文本框", R.mipmap.pear_pic);
+        widgetList.add(autoTv);
     }
 
 }

@@ -29,6 +29,7 @@
         <activity android:name=".btn.CheckBoxActivity"></activity>
         <activity android:name=".btn.CheckBoxShowActivity"></activity>
         <activity android:name=".btn.ButtonActivity"></activity>
+        <activity android:name=".btn.AutoCompleteTextViewActivity"></activity>
 
         <activity android:name=".layout.CalculatorActivity"></activity>
         <activity android:name=".layout.FrameLayoutActivity"></activity>
@@ -41,6 +42,7 @@
         <activity android:name=".listview.TourismContentActivity"></activity>
         <activity android:name=".listview.ListViewDataADESActivity"></activity>
         <activity android:name=".listview.ReusableAdapterActivity"></activity>
+        <activity android:name=".listview.ExpandableListViewActivity"></activity>
 
         <activity android:name=".switcher.ImageViewActivity"></activity>
         <activity android:name=".switcher.SpinnerActivity"></activity>
