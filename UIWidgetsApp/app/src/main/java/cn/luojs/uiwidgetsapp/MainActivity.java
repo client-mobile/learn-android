@@ -126,6 +126,14 @@ public class MainActivity extends AppCompatActivity {
                         it.setClass(MainActivity.this, ViewFlipperActivity.class);
                         startActivity(it);
                         break;
+                    case 21:
+                        it.setClass(MainActivity.this, ViewPagerActivity.class);
+                        startActivity(it);
+                        break;
+                    case 22:
+                        it.setClass(MainActivity.this, NotificationActivity.class);
+                        startActivity(it);
+                        break;
                     default:
                         Toast.makeText(MainActivity.this, widget.getName(),
                                 Toast.LENGTH_SHORT).show();
@@ -139,7 +147,7 @@ public class MainActivity extends AppCompatActivity {
      * 初始化函数，给list添加子项
      */
     private void initWidgets() {
-        Widget textViewDemo = new Widget("TextView 自动谈些", R.mipmap.apple_pic);
+        Widget textViewDemo = new Widget("TextView 自动填写", R.mipmap.apple_pic);
         widgetList.add(textViewDemo);
         Widget imgViewDemo = new Widget("ImageView src改变", R.mipmap.banana_pic);
         widgetList.add(imgViewDemo);
@@ -181,6 +189,10 @@ public class MainActivity extends AppCompatActivity {
         widgetList.add(spinner);
         Widget vf = new Widget("ViewFlipper 翻转视图", R.mipmap.pear_pic);
         widgetList.add(vf);
+        Widget vp = new Widget("ViewPager", R.mipmap.pear_pic);
+        widgetList.add(vp);
+        Widget notification = new Widget("通知栏", R.mipmap.pear_pic);
+        widgetList.add(notification);
     }
 
 }

@@ -45,6 +45,13 @@
 
         <activity android:name=".SpinnerActivity"></activity>
         <activity android:name=".ViewFlipperActivity"></activity>
+        <activity android:name=".ViewPagerActivity"></activity>
+        <activity android:name=".VPOneActivity"></activity>
+        <activity android:name=".VPTwoActivity"></activity>
+        <activity android:name=".VPThreeActivity"></activity>
+        <activity android:name=".VPFourActivity"></activity>
+
+        <activity android:name=".NotificationActivity"></activity>
     </application>
 
 </manifest>
