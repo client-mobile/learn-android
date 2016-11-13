@@ -6,7 +6,7 @@
 
     <fragment
         android:id="@+id/tourism_content_fragment"
-        android:name="cn.luojs.uiwidgetsapp.TourismContentFragment"
+        android:name="cn.luojs.uiwidgetsapp.frag.TourismContentFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         />

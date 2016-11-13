@@ -8,10 +8,10 @@ import android.content.Intent;
 
 public class AutoUpdateReceiver extends BroadcastReceiver {
 
-    @Override
-    public void onReceive(Context context, Intent intent) {
-        Intent i = new Intent(context, AutoUpdateService.class);
-        context.startService(i);
-    }
+	@Override
+	public void onReceive(Context context, Intent intent) {
+		Intent i = new Intent(context, AutoUpdateService.class);
+		context.startService(i);
+	}
 
 }

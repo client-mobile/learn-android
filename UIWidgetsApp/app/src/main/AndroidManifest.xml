@@ -20,51 +20,48 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".TextViewActivity"></activity>
-        <activity android:name=".ImageViewActivity"></activity>
-        <activity android:name=".EditTextActivity"></activity>
-        <activity android:name=".ProgressBarActivity"></activity>
-        <activity android:name=".RatingBarActivity"></activity>
-        <activity android:name=".DialogActivity"></activity>
-        <activity android:name=".RadioButtonActivity"></activity>
-        <activity android:name=".RadioButtonShowActivity"></activity>
-        <activity android:name=".CheckBoxActivity"></activity>
-        <activity android:name=".CheckBoxShowActivity"></activity>
+        <activity android:name=".btn.TextViewActivity"></activity>
+        <activity android:name=".btn.EditTextActivity"></activity>
+        <activity android:name=".btn.ProgressBarActivity"></activity>
+        <activity android:name=".btn.RatingBarActivity"></activity>
+        <activity android:name=".btn.RadioButtonActivity"></activity>
+        <activity android:name=".btn.RadioButtonShowActivity"></activity>
+        <activity android:name=".btn.CheckBoxActivity"></activity>
+        <activity android:name=".btn.CheckBoxShowActivity"></activity>
+        <activity android:name=".btn.ButtonActivity"></activity>
 
-        <activity android:name=".CalculatorActivity"></activity>
-        <activity android:name=".FrameLayoutActivity"></activity>
-        <activity android:name=".TableLayoutActivity"></activity>
-        <activity android:name=".RelativeLayoutActivity"></activity>
-        <activity android:name=".MyselfTitleActivity"></activity>
+        <activity android:name=".layout.CalculatorActivity"></activity>
+        <activity android:name=".layout.FrameLayoutActivity"></activity>
+        <activity android:name=".layout.TableLayoutActivity"></activity>
+        <activity android:name=".layout.RelativeLayoutActivity"></activity>
+        <activity android:name=".layout.MyselfTitleActivity"></activity>
 
-        <activity android:name=".MessageActivity"></activity>
+        <activity android:name=".listview.MessageActivity"></activity>
+        <activity android:name=".listview.TourismActivity"></activity>
+        <activity android:name=".listview.TourismContentActivity"></activity>
+        <activity android:name=".listview.ListViewDataADESActivity"></activity>
+        <activity android:name=".listview.ReusableAdapterActivity"></activity>
 
-        <activity android:name=".TourismActivity"></activity>
-        <activity android:name=".TourismContentActivity"></activity>
+        <activity android:name=".switcher.ImageViewActivity"></activity>
+        <activity android:name=".switcher.SpinnerActivity"></activity>
+        <activity android:name=".switcher.ViewFlipperActivity"></activity>
+        <activity android:name=".switcher.ViewPagerActivity"></activity>
+        <activity android:name=".switcher.VPOneActivity"></activity>
+        <activity android:name=".switcher.VPTwoActivity"></activity>
+        <activity android:name=".switcher.VPThreeActivity"></activity>
+        <activity android:name=".switcher.VPFourActivity"></activity>
 
-        <activity android:name=".ListViewDataADESActivity"></activity>
-        <activity android:name=".ReusableAdapterActivity"></activity>
+        <activity android:name=".dialog.DialogActivity"></activity>
+        <activity android:name=".dialog.NotificationActivity"></activity>
+        <activity android:name=".dialog.NotificationOtherActivity"></activity>
+        <activity android:name=".dialog.SimpleNtfActivity"></activity>
+        <activity android:name=".dialog.SimpleNtfTestActivity"></activity>
 
-        <activity android:name=".BottomNavBarActivity"></activity>
-        <activity android:name=".ButtonActivity"></activity>
-
-        <activity android:name=".SpinnerActivity"></activity>
-        <activity android:name=".ViewFlipperActivity"></activity>
-        <activity android:name=".ViewPagerActivity"></activity>
-        <activity android:name=".VPOneActivity"></activity>
-        <activity android:name=".VPTwoActivity"></activity>
-        <activity android:name=".VPThreeActivity"></activity>
-        <activity android:name=".VPFourActivity"></activity>
-
-        <activity android:name=".NotificationActivity"></activity>
-        <activity android:name=".NotificationOtherActivity"></activity>
-        <activity android:name=".SimpleNtfActivity"></activity>
-        <activity android:name=".SimpleNtfTestActivity"></activity>
-
-        <activity android:name=".MenuActivity"></activity>
-        <activity android:name=".DrawerLayoutActivity"></activity>
-        <activity android:name=".DrawerLayout2Activity"></activity>
-        <activity android:name=".DLOtherActivity"></activity>
+        <activity android:name=".menu.MenuActivity"></activity>
+        <activity android:name=".menu.DrawerLayoutActivity"></activity>
+        <activity android:name=".menu.DrawerLayout2Activity"></activity>
+        <activity android:name=".menu.DLOtherActivity"></activity>
+        <activity android:name=".menu.BottomNavBarActivity"></activity>
 
         <!--<activity android:name=".ClockActivity"></activity>-->
         <!--<activity android:name=".GalleryActivity"></activity>-->

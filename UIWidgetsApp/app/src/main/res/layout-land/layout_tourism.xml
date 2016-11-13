@@ -4,7 +4,7 @@
 
     <fragment
         android:id="@+id/news_title_fragment"
-        android:name="cn.luojs.uiwidgetsapp.TourismNameFragment"
+        android:name="cn.luojs.uiwidgetsapp.frag.TourismNameFragment"
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:layout_weight="1" />
@@ -17,7 +17,7 @@
 
         <fragment
             android:id="@+id/tourism_content_fragment"
-            android:name="cn.luojs.uiwidgetsapp.TourismContentFragment"
+            android:name="cn.luojs.uiwidgetsapp.frag.TourismContentFragment"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
     </FrameLayout>

@@ -24,7 +24,7 @@
 
     <fragment
         android:id="@+id/fg_left_menu"
-        android:name="cn.luojs.uiwidgetsapp.DLLeftFragment"
+        android:name="cn.luojs.uiwidgetsapp.frag.DLLeftFragment"
         android:layout_width="300dp"
         android:layout_height="match_parent"
         android:layout_gravity="start"
@@ -33,7 +33,7 @@
 
     <fragment
         android:id="@+id/fg_right_menu"
-        android:name="cn.luojs.uiwidgetsapp.DLRightFragment"
+        android:name="cn.luojs.uiwidgetsapp.frag.DLRightFragment"
         android:layout_width="100dp"
         android:layout_height="match_parent"
         android:layout_gravity="end"

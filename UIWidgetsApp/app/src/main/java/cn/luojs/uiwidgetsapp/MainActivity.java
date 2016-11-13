@@ -11,6 +11,36 @@ import android.widget.Toast;
 import java.util.ArrayList;
 import java.util.List;
 
+import cn.luojs.uiwidgetsapp.adapter.WidgetAdapter;
+import cn.luojs.uiwidgetsapp.btn.ButtonActivity;
+import cn.luojs.uiwidgetsapp.btn.CheckBoxActivity;
+import cn.luojs.uiwidgetsapp.btn.EditTextActivity;
+import cn.luojs.uiwidgetsapp.btn.ProgressBarActivity;
+import cn.luojs.uiwidgetsapp.btn.RadioButtonActivity;
+import cn.luojs.uiwidgetsapp.btn.RatingBarActivity;
+import cn.luojs.uiwidgetsapp.btn.TextViewActivity;
+import cn.luojs.uiwidgetsapp.dialog.DialogActivity;
+import cn.luojs.uiwidgetsapp.dialog.NotificationActivity;
+import cn.luojs.uiwidgetsapp.dialog.SimpleNtfTestActivity;
+import cn.luojs.uiwidgetsapp.layout.CalculatorActivity;
+import cn.luojs.uiwidgetsapp.layout.FrameLayoutActivity;
+import cn.luojs.uiwidgetsapp.layout.MyselfTitleActivity;
+import cn.luojs.uiwidgetsapp.layout.RelativeLayoutActivity;
+import cn.luojs.uiwidgetsapp.layout.TableLayoutActivity;
+import cn.luojs.uiwidgetsapp.listview.ListViewDataADESActivity;
+import cn.luojs.uiwidgetsapp.listview.MessageActivity;
+import cn.luojs.uiwidgetsapp.listview.ReusableAdapterActivity;
+import cn.luojs.uiwidgetsapp.listview.TourismActivity;
+import cn.luojs.uiwidgetsapp.menu.BottomNavBarActivity;
+import cn.luojs.uiwidgetsapp.menu.DrawerLayout2Activity;
+import cn.luojs.uiwidgetsapp.menu.DrawerLayoutActivity;
+import cn.luojs.uiwidgetsapp.menu.MenuActivity;
+import cn.luojs.uiwidgetsapp.model.Widget;
+import cn.luojs.uiwidgetsapp.switcher.ImageViewActivity;
+import cn.luojs.uiwidgetsapp.switcher.SpinnerActivity;
+import cn.luojs.uiwidgetsapp.switcher.ViewFlipperActivity;
+import cn.luojs.uiwidgetsapp.switcher.ViewPagerActivity;
+
 public class MainActivity extends AppCompatActivity {
 
     // 用于保存ListView的每个子项

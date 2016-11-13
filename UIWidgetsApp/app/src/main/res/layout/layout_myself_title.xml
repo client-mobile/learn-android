@@ -5,9 +5,9 @@
 
     <!--<include layout="@layout/title" />-->
 
-    <cn.luojs.uiwidgetsapp.TitleLayout
+    <cn.luojs.uiwidgetsapp.layout.TitleLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        ></cn.luojs.uiwidgetsapp.TitleLayout>
+        ></cn.luojs.uiwidgetsapp.layout.TitleLayout>
 
 </LinearLayout>

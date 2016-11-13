@@ -5,7 +5,7 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <cn.luojs.uiwidgetsapp.MyButton
+    <cn.luojs.uiwidgetsapp.model.MyButton
         android:id="@+id/myBtn"
         android:layout_width="match_parent"
         android:layout_height="64dp"
