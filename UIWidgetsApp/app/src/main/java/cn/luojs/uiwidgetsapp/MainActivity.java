@@ -138,6 +138,18 @@ public class MainActivity extends AppCompatActivity {
                         it.setClass(MainActivity.this, SimpleNtfTestActivity.class);
                         startActivity(it);
                         break;
+                    case 24:
+                        it.setClass(MainActivity.this, MenuActivity.class);
+                        startActivity(it);
+                        break;
+                    case 25:
+                        it.setClass(MainActivity.this, DrawerLayoutActivity.class);
+                        startActivity(it);
+                        break;
+                    case 26:
+                        it.setClass(MainActivity.this, DrawerLayout2Activity.class);
+                        startActivity(it);
+                        break;
                     default:
                         Toast.makeText(MainActivity.this, widget.getName(),
                                 Toast.LENGTH_SHORT).show();
@@ -199,6 +211,12 @@ public class MainActivity extends AppCompatActivity {
         widgetList.add(notification);
         Widget simpleNtf = new Widget("简易通知栏", R.mipmap.pear_pic);
         widgetList.add(simpleNtf);
+        Widget menu = new Widget("菜单", R.mipmap.pear_pic);
+        widgetList.add(menu);
+        Widget dl = new Widget("DrawerLayout", R.mipmap.pear_pic);
+        widgetList.add(dl);
+        Widget dl2 = new Widget("DrawerLayout2", R.mipmap.pear_pic);
+        widgetList.add(dl2);
     }
 
 }

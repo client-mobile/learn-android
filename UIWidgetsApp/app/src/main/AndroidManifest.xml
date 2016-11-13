@@ -60,6 +60,14 @@
         <activity android:name=".NotificationOtherActivity"></activity>
         <activity android:name=".SimpleNtfActivity"></activity>
         <activity android:name=".SimpleNtfTestActivity"></activity>
+
+        <activity android:name=".MenuActivity"></activity>
+        <activity android:name=".DrawerLayoutActivity"></activity>
+        <activity android:name=".DrawerLayout2Activity"></activity>
+        <activity android:name=".DLOtherActivity"></activity>
+
+        <!--<activity android:name=".ClockActivity"></activity>-->
+        <!--<activity android:name=".GalleryActivity"></activity>-->
     </application>
 
 </manifest>
