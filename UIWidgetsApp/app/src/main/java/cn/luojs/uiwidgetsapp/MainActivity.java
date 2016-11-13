@@ -122,6 +122,10 @@ public class MainActivity extends AppCompatActivity {
                         it.setClass(MainActivity.this, SpinnerActivity.class);
                         startActivity(it);
                         break;
+                    case 20:
+                        it.setClass(MainActivity.this, ViewFlipperActivity.class);
+                        startActivity(it);
+                        break;
                     default:
                         Toast.makeText(MainActivity.this, widget.getName(),
                                 Toast.LENGTH_SHORT).show();
@@ -175,6 +179,8 @@ public class MainActivity extends AppCompatActivity {
         widgetList.add(btnSwitch);
         Widget spinner = new Widget("spinner 选择段位", R.mipmap.pear_pic);
         widgetList.add(spinner);
+        Widget vf = new Widget("ViewFlipper 翻转视图", R.mipmap.pear_pic);
+        widgetList.add(vf);
     }
 
 }

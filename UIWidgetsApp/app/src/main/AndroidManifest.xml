@@ -44,6 +44,7 @@
         <activity android:name=".ButtonActivity"></activity>
 
         <activity android:name=".SpinnerActivity"></activity>
+        <activity android:name=".ViewFlipperActivity"></activity>
     </application>
 
 </manifest>

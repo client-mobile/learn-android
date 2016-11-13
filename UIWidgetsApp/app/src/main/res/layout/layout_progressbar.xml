@@ -57,4 +57,13 @@
         android:layout_marginTop="10dp"
         android:indeterminate="true" />
 
+    <SeekBar
+        android:id="@+id/sb_normal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxHeight="5.0dp"
+        android:minHeight="5.0dp"
+        android:progressDrawable="@drawable/sb_bar"
+        android:thumb="@drawable/sb_thumb"/>
+
 </LinearLayout>
