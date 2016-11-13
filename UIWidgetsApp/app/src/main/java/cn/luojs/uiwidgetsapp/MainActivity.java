@@ -134,6 +134,10 @@ public class MainActivity extends AppCompatActivity {
                         it.setClass(MainActivity.this, NotificationActivity.class);
                         startActivity(it);
                         break;
+                    case 23:
+                        it.setClass(MainActivity.this, SimpleNtfTestActivity.class);
+                        startActivity(it);
+                        break;
                     default:
                         Toast.makeText(MainActivity.this, widget.getName(),
                                 Toast.LENGTH_SHORT).show();
@@ -193,6 +197,8 @@ public class MainActivity extends AppCompatActivity {
         widgetList.add(vp);
         Widget notification = new Widget("通知栏", R.mipmap.pear_pic);
         widgetList.add(notification);
+        Widget simpleNtf = new Widget("简易通知栏", R.mipmap.pear_pic);
+        widgetList.add(simpleNtf);
     }
 
 }
