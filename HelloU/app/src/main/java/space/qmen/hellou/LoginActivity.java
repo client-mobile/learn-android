@@ -47,11 +47,11 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
             case R.id.userpwd_eye:
                 isEyeOpen = !isEyeOpen;
                 if(isEyeOpen == true) {
-                    userpwd_eye.setBackgroundResource(R.mipmap.eye_closed);
+                    userpwd_eye.setBackgroundResource(R.mipmap.eye_open);
                     userpwd.setInputType(InputType.TYPE_TEXT_VARIATION_VISIBLE_PASSWORD);
                     userpwd.setSelection(userpwd.length()); // 游标移到最后
                 } else {
-                    userpwd_eye.setBackgroundResource(R.mipmap.eye_open);
+                    userpwd_eye.setBackgroundResource(R.mipmap.eye_closed);
                     userpwd.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_PASSWORD);
                     userpwd.setSelection(userpwd.length()); // 游标移到最后
                 }
