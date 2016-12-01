@@ -17,6 +17,7 @@
             android:background="@mipmap/tab_menu_search_stu"/>
 
         <EditText
+            android:id="@+id/user_no_search_edit"
             android:layout_width="wrap_content"
             android:layout_height="30dp"
             android:layout_marginLeft="10dp"

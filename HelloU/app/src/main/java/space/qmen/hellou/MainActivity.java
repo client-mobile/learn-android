@@ -88,17 +88,17 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 setSelected();
                 tab_add.setSelected(true);
                 txt_topbar.setText("新增一个学生");
-                if(fg1 == null){
+                if(fg1 == null) {
                     fg1 = new AddStuFragment();
                     fTransaction.add(R.id.ly_content, fg1);
-                }else{
+                } else {
                     fTransaction.show(fg1);
                 }
                 break;
             case R.id.tab_search:
                 setSelected();
                 tab_search.setSelected(true);
-                txt_topbar.setText("增删查一个学生");
+                txt_topbar.setText("删改查一个学生");
                 if(fg2 == null){
                     fg2 = new SearchStuFragment();
                     fTransaction.add(R.id.ly_content,fg2);
@@ -110,10 +110,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 setSelected();
                 tab_markdown.setSelected(true);
                 txt_topbar.setText("markdown编辑器");
-                if(fg3 == null){
+                if(fg3 == null) {
                     fg3 = new MarkDownFragment("markdown编辑器");
                     fTransaction.add(R.id.ly_content,fg3);
-                }else{
+                } else {
                     fTransaction.show(fg3);
                 }
                 break;
@@ -121,10 +121,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 setSelected();
                 tab_more.setSelected(true);
                 txt_topbar.setText("更多惊喜");
-                if(fg4 == null){
+                if(fg4 == null) {
                     fg4 = new MoreFragment("更多惊喜");
                     fTransaction.add(R.id.ly_content,fg4);
-                }else{
+                } else {
                     fTransaction.show(fg4);
                 }
                 break;

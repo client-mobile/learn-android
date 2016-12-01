@@ -16,7 +16,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
             + "user_no integer primary key autoincrement, "
             + "user_type integer default 1 not null, "
             + "user_name text not null, "
-            + "user_pwd text not null, "
+            + "user_pwd text  not null, "
             + "user_gender integer not null, "
             + "user_tel text, "
             + "user_address text)";

@@ -89,13 +89,15 @@ public class AddStuFragment extends Fragment implements AdapterView.OnItemSelect
                 //显示Toast信息
 //                Toast.makeText(AddStuFragment.this.getActivity(), str1 + " vs " + str2, Toast.LENGTH_SHORT).show();
                 if(add_user_no_edit.getText().toString().equals("")) {
-                    Toast.makeText(AddStuFragment.this.getActivity(), "用户名不能为空", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(AddStuFragment.this.getActivity(), "账号不能为空", Toast.LENGTH_SHORT).show();
                     add_user_no_edit.requestFocus();
+                } else if(add_user_name_edit.getText().toString().equals("")) {
+                    Toast.makeText(AddStuFragment.this.getActivity(), "姓名不能为空", Toast.LENGTH_SHORT).show();
+                    add_user_name_edit.requestFocus();
                 } else if(str1.equals("")) {
                     Toast.makeText(AddStuFragment.this.getActivity(), "密码不能为空", Toast.LENGTH_SHORT).show();
                     add_user_pwd_edit.requestFocus();
-                }
-                else if(!str1.equals(str2)) {
+                } else if(!str1.equals(str2)) {
                     AlertDialog.Builder dialog = new AlertDialog.Builder
                             (AddStuFragment.this.getActivity());
                     dialog.setTitle("输入错误");
@@ -118,42 +120,45 @@ public class AddStuFragment extends Fragment implements AdapterView.OnItemSelect
                     add_user_pwd_again_edit.setText("");
                     dialog.show();
                 } else {
-                    SQLiteDatabase db = dbHelper.getWritableDatabase();
-                    ContentValues values = new ContentValues();
-                    values.put("user_no", Integer.parseInt(add_user_no_edit.getText().toString()));
-                    values.put("user_no", Integer.parseInt(add_user_no_edit.getText().toString()));
-                    values.put("user_type", checkedUserType);
-                    values.put("user_name", add_user_name_edit.getText().toString());
-                    values.put("user_pwd", add_user_pwd_edit.getText().toString());
-                    values.put("user_gender", checkedGender);
-                    values.put("user_tel", add_user_tel_edit.getText().toString());
-                    values.put("user_address", add_user_address_edit.getText().toString());
-                    db.insert("User", null, values);
+
 //                    values.clear();
 //                    values.put("name", "The Lost Symbol");
 //                    values.put("author", "Dan Brown");
 //                    values.put("pages", 510);
 //                    values.put("price", 19.95);
 //                    db.insert("Book", null, values);
+                    SQLiteDatabase db = dbHelper.getWritableDatabase();
+                    Cursor cursor = db.rawQuery("select * from User where user_no = ?",
+                            new String[]{ add_user_no_edit.getText().toString()  });
+                    if(cursor.getCount() != 0) {
+                        Toast.makeText(AddStuFragment.this.getActivity()
+                                , "添加失败，该用户已存在"
+                                , Toast.LENGTH_SHORT).show();
+                    } else {
+                        ContentValues values = new ContentValues();
+                        values.put("user_no", Integer.parseInt(add_user_no_edit.getText().toString()));
+                        values.put("user_no", Integer.parseInt(add_user_no_edit.getText().toString()));
+                        values.put("user_type", checkedUserType);
+                        values.put("user_name", add_user_name_edit.getText().toString());
+                        values.put("user_pwd", add_user_pwd_edit.getText().toString());
+                        values.put("user_gender", checkedGender);
+                        values.put("user_tel", add_user_tel_edit.getText().toString());
+                        values.put("user_address", add_user_address_edit.getText().toString());
+                        db.insert("User", null, values);
 
-//                    Cursor cursor = db.query("User", null, null, null, null, null,
-//                            null, null);
-//                    String outputStr = "";
-//
-//                    if (cursor.moveToFirst()) {
-//                        do {
-//                            String userNo = cursor.getString(cursor
-//                                    .getColumnIndex("user_no"));
-//                            String userName = cursor.getString(cursor
-//                                    .getColumnIndex("user_name"));
-//                            outputStr += "学号: " + userNo + "\n";
-//                            outputStr += "用户名： " + userName + "\n";
-//                        } while (cursor.moveToNext());
-//                    }
-//                    cursor.close();
-                    Toast.makeText(AddStuFragment.this.getActivity()
-                                 , "添加成功"
-                                 , Toast.LENGTH_SHORT).show();
+                        Toast.makeText(AddStuFragment.this.getActivity()
+                                , "添加成功"
+                                , Toast.LENGTH_SHORT).show();
+
+                        add_user_no_edit.setText("");
+                        add_user_name_edit.setText("");
+                        add_user_pwd_edit.setText("");
+                        add_user_pwd_again_edit.setText("");
+                        add_user_tel_edit.setText("");
+                        add_user_address_edit.setText("");
+
+                    }
+
                 }
             }
         });
