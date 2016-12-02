@@ -1,6 +1,8 @@
 package space.qmen.hellou;
 
 import android.content.Intent;
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.Editable;
@@ -9,6 +11,7 @@ import android.text.TextWatcher;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class LoginActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -18,6 +21,9 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     private TextWatcher username_watcher, userpwd_watcher;
     private Boolean isEyeOpen = false;
 
+    private DatabaseHelper dbHelper;
+    private SQLiteDatabase db;
+    private Cursor cursor;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +33,8 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
 
         initBtn();
         initWatcher();
+
+        dbHelper = new DatabaseHelper(this, "StuManageSys.db", null, 2);
 
         username = (EditText) findViewById(R.id.username);
         userpwd = (EditText) findViewById(R.id.userpwd);
@@ -57,9 +65,45 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                 }
                 break;
             case R.id.login_btn:
-                Intent intent = new Intent();
-                intent.setClass(LoginActivity.this, MainActivity.class);
-                startActivity(intent);
+                if(username.getText().toString().equals("")) {
+                    Toast.makeText(this, "账号为空", Toast.LENGTH_SHORT).show();
+                    username.requestFocus();
+                }
+                else if(userpwd.getText().toString().equals("")) {
+                    Toast.makeText(this, "密码为空", Toast.LENGTH_SHORT).show();
+                    userpwd.requestFocus();
+                }
+                else {
+                    db = dbHelper.getWritableDatabase();
+                    cursor = db.rawQuery("select * from User where user_no = ?",
+                            new String[]{ username.getText().toString() });
+
+                    if(cursor.getCount() == 0) {
+                        Toast.makeText(this, "用户不存在或密码错误", Toast.LENGTH_SHORT).show();
+                    }
+                    else {
+                        String user_pwd = "";
+
+                        if (cursor.moveToFirst()) {
+                            user_pwd = cursor.getString(cursor
+                                    .getColumnIndex("user_pwd"));
+                        }
+
+                        if(!user_pwd.equals(userpwd.getText().toString())) {
+                            Toast.makeText(this, "用户不存在或密码错误", Toast.LENGTH_SHORT).show();
+                        }
+                        else {
+                            Intent intent = new Intent();
+                            intent.setClass(LoginActivity.this, MainActivity.class);
+                            startActivity(intent);
+                        }
+                    }
+                    cursor.close();
+
+
+                }
+
+
                 break;
             default:
                 break;

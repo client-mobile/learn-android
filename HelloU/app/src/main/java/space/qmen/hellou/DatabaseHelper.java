@@ -21,6 +21,10 @@ public class DatabaseHelper extends SQLiteOpenHelper {
             + "user_tel text, "
             + "user_address text)";
 
+    public static final String INIT_ADMIN = "insert into User values " +
+                    "('0', 2, 'admin', 'admin', 1, '17816869505', '6-523')";
+
+
     private Context mContext;
 
     public DatabaseHelper(Context context, String name,
@@ -32,6 +36,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase db) {
         db.execSQL(CREATE_USER);
+        db.execSQL(INIT_ADMIN);
         Toast.makeText(mContext, "Create succeeded", Toast.LENGTH_SHORT).show();
     }
 

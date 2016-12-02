@@ -32,13 +32,13 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="4">
+        android:layout_weight="4"
+        android:gravity="right">
+
         <ImageView
             android:id="@+id/edit_user_btn"
             android:layout_width="20dp"
             android:layout_height="20dp"
-            android:layout_marginLeft="10dp"
-
             android:background="@mipmap/tab_menu_markdown"
             />
 
@@ -46,10 +46,11 @@
             android:id="@+id/delete_user_btn"
             android:layout_width="25dp"
             android:layout_height="25dp"
-            android:layout_marginLeft="10dp"
+            android:layout_marginLeft="5dp"
             android:layout_marginTop="-2dp"
             android:background="@mipmap/info_clear"
             />
+
     </LinearLayout>
 
 </LinearLayout>

@@ -29,7 +29,7 @@
             />
 
         <TextView
-            android:id="@+id/add_user_no_edit"
+            android:id="@+id/show_user_no"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -44,6 +44,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
         android:orientation="horizontal">
 
         <TextView
@@ -55,6 +56,7 @@
             />
 
         <TextView
+            android:id="@+id/show_user_type"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -81,12 +83,13 @@
             />
 
         <TextView
+            android:id="@+id/show_user_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_weight="1"
             android:layout_marginLeft="4dp"
-            android:text="骆金参"
+            android:text=""
             android:textSize="20dp"/>
 
     </LinearLayout>
@@ -94,6 +97,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
         android:orientation="horizontal">
 
         <TextView
@@ -105,12 +109,13 @@
             />
 
         <TextView
+            android:id="@+id/show_user_gender"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_weight="1"
             android:layout_marginLeft="4dp"
-            android:text="男"
+            android:text=""
             android:textSize="20dp"/>
 
     </LinearLayout>
@@ -118,6 +123,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
         android:orientation="horizontal">
 
         <TextView
@@ -129,12 +135,13 @@
             />
 
         <TextView
+            android:id="@+id/show_user_tel"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_weight="1"
             android:layout_marginLeft="4dp"
-            android:text="17816869505"
+            android:text=""
             android:textSize="20dp"/>
 
     </LinearLayout>
@@ -143,6 +150,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
         android:orientation="horizontal">
 
         <TextView
@@ -154,12 +162,13 @@
             />
 
         <TextView
+            android:id="@+id/show_user_address"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_weight="1"
             android:layout_marginLeft="4dp"
-            android:text="HZNU"
+            android:text=""
             android:textSize="20dp"/>
 
     </LinearLayout>

@@ -13,12 +13,12 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 public class ListItemClickAdapter extends BaseAdapter {
     private Context contxet;
-//    private ArrayList<String> list;
     private ArrayList<EditItem> list;
     private ListItemClickHelp callback;
     private LayoutInflater mInflater;
@@ -67,7 +67,8 @@ public class ListItemClickAdapter extends BaseAdapter {
             holder = (ViewHolder) convertView.getTag();
         }
 
-//        holder.txt_user_name.setText(list.);
+        holder.txt_user_name.setText(list.get(position).getUserName());
+        holder.txt_user_no.setText(list.get(position).getUserNo());
 
         final View view = convertView;
         final int p = position;

@@ -37,7 +37,8 @@ public class AddStuFragment extends Fragment implements AdapterView.OnItemSelect
     private Button add_user_btn;
 
     private DatabaseHelper dbHelper;
-
+    private SQLiteDatabase db;
+    private Cursor cursor;
 
     public AddStuFragment() {
 
@@ -55,7 +56,7 @@ public class AddStuFragment extends Fragment implements AdapterView.OnItemSelect
         add_user_pwd_edit = (EditText) view.findViewById(R.id.add_user_pwd_edit);
         add_user_pwd_again_edit = (EditText) view.findViewById(R.id.add_user_pwd_again_edit);
         add_user_tel_edit = (EditText) view.findViewById(R.id.add_user_tel_edit);
-        add_user_address_edit = (EditText) view.findViewById(R.id.add_user_tel_edit);
+        add_user_address_edit = (EditText) view.findViewById(R.id.add_user_address_edit);
 
         spinner_user_type = (Spinner) view.findViewById(R.id.spinner_user_type);
         spinner_user_type.setOnItemSelectedListener(this);
@@ -73,8 +74,8 @@ public class AddStuFragment extends Fragment implements AdapterView.OnItemSelect
                         checkedGender = 0;
                         break;
                 }
-                Toast.makeText(AddStuFragment.this.getActivity(),
-                        checkedGender + "", Toast.LENGTH_SHORT).show();
+//                Toast.makeText(AddStuFragment.this.getActivity(),
+//                        checkedGender + "", Toast.LENGTH_SHORT).show();
 
             }
         });
@@ -103,14 +104,14 @@ public class AddStuFragment extends Fragment implements AdapterView.OnItemSelect
                     dialog.setTitle("输入错误");
                     dialog.setMessage("密码输入不一致");
                     dialog.setCancelable(false);
-                    dialog.setPositiveButton("OK", new DialogInterface.
+                    dialog.setPositiveButton("重新输入", new DialogInterface.
                             OnClickListener() {
                         @Override
                         public void onClick(DialogInterface dialog, int which) {
 
                         }
                     });
-                    dialog.setNegativeButton("Cancel", new DialogInterface. OnClickListener() {
+                    dialog.setNegativeButton("只能重新输入呗", new DialogInterface. OnClickListener() {
                         @Override
                         public void onClick(DialogInterface dialog, int which) {
 
@@ -127,8 +128,8 @@ public class AddStuFragment extends Fragment implements AdapterView.OnItemSelect
 //                    values.put("pages", 510);
 //                    values.put("price", 19.95);
 //                    db.insert("Book", null, values);
-                    SQLiteDatabase db = dbHelper.getWritableDatabase();
-                    Cursor cursor = db.rawQuery("select * from User where user_no = ?",
+                    db = dbHelper.getWritableDatabase();
+                    cursor = db.rawQuery("select * from User where user_no = ?",
                             new String[]{ add_user_no_edit.getText().toString()  });
                     if(cursor.getCount() != 0) {
                         Toast.makeText(AddStuFragment.this.getActivity()
@@ -136,7 +137,6 @@ public class AddStuFragment extends Fragment implements AdapterView.OnItemSelect
                                 , Toast.LENGTH_SHORT).show();
                     } else {
                         ContentValues values = new ContentValues();
-                        values.put("user_no", Integer.parseInt(add_user_no_edit.getText().toString()));
                         values.put("user_no", Integer.parseInt(add_user_no_edit.getText().toString()));
                         values.put("user_type", checkedUserType);
                         values.put("user_name", add_user_name_edit.getText().toString());
@@ -156,6 +156,8 @@ public class AddStuFragment extends Fragment implements AdapterView.OnItemSelect
                         add_user_pwd_again_edit.setText("");
                         add_user_tel_edit.setText("");
                         add_user_address_edit.setText("");
+                        spinner_user_type.setSelection(0);
+                        genderRadioGroup.check(R.id.btnMan);
 
                     }
 
@@ -171,8 +173,6 @@ public class AddStuFragment extends Fragment implements AdapterView.OnItemSelect
     public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
 
         if(hasSpinnerSelected == true) {
-        Toast.makeText(AddStuFragment.this.getActivity(), "授权用户类型： " + parent.getItemAtPosition(position).toString(),
-                            Toast.LENGTH_SHORT).show();
             checkedUserType = (int)id;
         } else {
             hasSpinnerSelected = true;
