@@ -6,11 +6,14 @@ package space.qmen.hellou;
 
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.FrameLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 /**
  * Created by Coder-pig on 2015/8/28 0028.
@@ -25,6 +28,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private TextView tab_more;
     private FrameLayout ly_content;
 
+
     //Fragment Object
     private AddStuFragment fg1;
     private SearchStuFragment fg2;
@@ -32,13 +36,26 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private MoreFragment fg4;
     private FragmentManager fManager;
 
-
+    private DatabaseHelper dbHelper;
+    private SQLiteDatabase db;
+    private Cursor cursor;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         getSupportActionBar().hide();
         setContentView(R.layout.activity_main);
+
+        dbHelper = new DatabaseHelper(this, "StuManageSys.db", null, 2);
+        db = dbHelper.getWritableDatabase();
+        cursor = db.rawQuery("select * from User where user_no = ?",
+                new String[]{ CurrentUserNo.getA() });
+
+        if (cursor.moveToFirst()) {
+            CurrentUserNo.setB(cursor.getInt(cursor
+                    .getColumnIndex("user_type")));
+        }
+
         fManager = getFragmentManager();
         bindViews();
 
@@ -87,7 +104,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.tab_add:
                 setSelected();
                 tab_add.setSelected(true);
-                txt_topbar.setText("新增一个学生");
+                txt_topbar.setText(CurrentUserNo.getA() + " 正在新增一个学生");
                 if(fg1 == null) {
                     fg1 = new AddStuFragment();
                     fTransaction.add(R.id.ly_content, fg1);
@@ -98,7 +115,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.tab_search:
                 setSelected();
                 tab_search.setSelected(true);
-                txt_topbar.setText("删改查一个学生");
+                txt_topbar.setText(CurrentUserNo.getA() + " 正在删改查一个学生");
                 if(fg2 == null){
                     fg2 = new SearchStuFragment();
                     fTransaction.add(R.id.ly_content,fg2);

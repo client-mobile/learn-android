@@ -74,8 +74,6 @@ public class AddStuFragment extends Fragment implements AdapterView.OnItemSelect
                         checkedGender = 0;
                         break;
                 }
-//                Toast.makeText(AddStuFragment.this.getActivity(),
-//                        checkedGender + "", Toast.LENGTH_SHORT).show();
 
             }
         });
@@ -87,9 +85,12 @@ public class AddStuFragment extends Fragment implements AdapterView.OnItemSelect
                 String str1 = add_user_pwd_edit.getText().toString();
                 String str2 = add_user_pwd_again_edit.getText().toString();
 
-                //显示Toast信息
-//                Toast.makeText(AddStuFragment.this.getActivity(), str1 + " vs " + str2, Toast.LENGTH_SHORT).show();
-                if(add_user_no_edit.getText().toString().equals("")) {
+                if(CurrentUserNo.getB() != 2) {
+                    Toast.makeText(AddStuFragment.this.getActivity()
+                                   , "权限不足无法操作"
+                                   , Toast.LENGTH_SHORT).show();
+                }
+                else if(add_user_no_edit.getText().toString().equals("")) {
                     Toast.makeText(AddStuFragment.this.getActivity(), "账号不能为空", Toast.LENGTH_SHORT).show();
                     add_user_no_edit.requestFocus();
                 } else if(add_user_name_edit.getText().toString().equals("")) {

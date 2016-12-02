@@ -1,6 +1,8 @@
 package space.qmen.hellou;
 
+import android.app.ProgressDialog;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.support.v7.app.AppCompatActivity;
@@ -11,11 +13,13 @@ import android.text.TextWatcher;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 public class LoginActivity extends AppCompatActivity implements View.OnClickListener {
 
     private Button login_btn, register_btn, forget_userpwd_btn;
+    private ImageView isMemorized_btn, isSelfLogin_btn;
     private EditText username, userpwd;
     private Button username_clear_btn, userpwd_eye, userpwd_clear_btn;
     private TextWatcher username_watcher, userpwd_watcher;
@@ -24,6 +28,9 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     private DatabaseHelper dbHelper;
     private SQLiteDatabase db;
     private Cursor cursor;
+
+    private SharedPreferences pref;
+    private ProgressDialog mDialog;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,12 +41,81 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         initBtn();
         initWatcher();
 
-        dbHelper = new DatabaseHelper(this, "StuManageSys.db", null, 2);
+        login_btn = (Button) findViewById(R.id.login_btn);
+        login_btn.setOnClickListener(this);
+
+        register_btn = (Button) findViewById(R.id.register_btn);
+        register_btn.setOnClickListener(this);
+
+        forget_userpwd_btn = (Button) findViewById(R.id.forget_userpwd_btn);
+        forget_userpwd_btn.setOnClickListener(this);
+
+        username_clear_btn = (Button) findViewById(R.id.username_clear_btn);
+        username_clear_btn.setOnClickListener(this);
+
+        userpwd_clear_btn = (Button) findViewById(R.id.userpwd_clear_btn);
+        userpwd_clear_btn.setOnClickListener(this);
+
+        userpwd_eye = (Button) findViewById(R.id.userpwd_eye);
+        userpwd_eye.setOnClickListener(this);
+
+        userpwd_clear_btn = (Button) findViewById(R.id.userpwd_clear_btn);
+        userpwd_clear_btn.setOnClickListener(this);
+
+        isSelfLogin_btn = (ImageView) findViewById(R.id.isSelfLogin);
+        isSelfLogin_btn.setOnClickListener(this);
+        isMemorized_btn = (ImageView) findViewById(R.id.isMemorized);
+        isMemorized_btn.setOnClickListener(this);
 
         username = (EditText) findViewById(R.id.username);
         userpwd = (EditText) findViewById(R.id.userpwd);
         username.addTextChangedListener(username_watcher);
         userpwd.addTextChangedListener(userpwd_watcher);
+
+//        userpwd.setText("hello");
+
+        pref = getSharedPreferences("loginValue", MODE_WORLD_WRITEABLE);
+        if( pref != null) {
+            // 如果记住密码
+            if(pref.getBoolean("isMemorized", false) == true) {
+                username.setText(pref.getString("userName", null));
+                userpwd.setText(pref.getString("userPwd", null));
+                isMemorized_btn.setBackgroundResource(R.mipmap.remember_pwd);
+            }
+
+            if(pref.getBoolean("isSelfLogin", false) == true) {
+                username.setText(pref.getString("userName", null));
+                userpwd.setText(pref.getString("userPwd", null));
+                isSelfLogin_btn.setBackgroundResource(R.mipmap.login_user_fixed);
+
+                creatDialog();
+                new Thread() {
+                    public void run() {
+                        try {
+                            Thread.sleep(500);
+
+                            if(mDialog.isShowing()){
+                                mDialog.dismiss();
+                            }
+
+                            // 存在bug,
+                            // 当按返回键的时候时候怎么跳出...
+                            if(pref.getString("userPwd", null) != null) {
+                                Intent intent = new Intent();
+                                CurrentUserNo.setA(username.getText().toString());
+                                intent.setClass(LoginActivity.this, MainActivity.class);
+                                startActivity(intent);
+                            }
+
+                        } catch (Exception e) {
+
+                        }
+                    }
+                }.start();
+            }
+        }
+
+        dbHelper = new DatabaseHelper(this, "StuManageSys.db", null, 2);
 
     }
 
@@ -65,6 +141,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                 }
                 break;
             case R.id.login_btn:
+
                 if(username.getText().toString().equals("")) {
                     Toast.makeText(this, "账号为空", Toast.LENGTH_SHORT).show();
                     username.requestFocus();
@@ -93,17 +170,62 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                             Toast.makeText(this, "用户不存在或密码错误", Toast.LENGTH_SHORT).show();
                         }
                         else {
+
+                            if(pref.getBoolean("isMemorized", false) == true) {
+
+                                pref.edit()
+                                        .putString("userName", username.getText().toString())
+                                        .putString("userPwd", userpwd.getText().toString())
+                                        .commit();
+                            }
+
+                            CurrentUserNo.setA(username.getText().toString());
                             Intent intent = new Intent();
                             intent.setClass(LoginActivity.this, MainActivity.class);
                             startActivity(intent);
                         }
                     }
                     cursor.close();
+                }
+                break;
+            case R.id.isMemorized:
 
-
+                if(pref.getBoolean("isMemorized", false) == true) {
+                    pref.edit()
+                            .putBoolean("isSelfLogin", false)
+                            .putBoolean("isMemorized", false)
+                            .putString("userName", null)
+                            .putString("userPwd", null)
+                            .commit();
+                    isMemorized_btn.setBackgroundResource(R.mipmap.forget_pwd);
+                    isSelfLogin_btn.setBackgroundResource(R.mipmap.login_user);
                 }
 
+                else {
+                    pref.edit()
+                            .putBoolean("isMemorized", true)
+//                            .putString("userName", username.getText().toString())
+//                            .putString("userPwd", userpwd.getText().toString())
+                            .commit();
+                    isMemorized_btn.setBackgroundResource(R.mipmap.remember_pwd);
+                }
+                break;
+            case R.id.isSelfLogin:
+                if(pref.getBoolean("isSelfLogin", false) == true) {
+                    pref.edit()
+                            .putBoolean("isSelfLogin", false)
+                            .commit();
+                    isSelfLogin_btn.setBackgroundResource(R.mipmap.login_user);
+                }
 
+                else {
+                    pref.edit()
+                            .putBoolean("isSelfLogin", true)
+//                            .putString("userName", username.getText().toString())
+//                            .putString("userPwd", userpwd.getText().toString())
+                            .commit();
+                    isSelfLogin_btn.setBackgroundResource(R.mipmap.login_user_fixed);
+                }
                 break;
             default:
                 break;
@@ -133,27 +255,22 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                 } else{
                     userpwd_clear_btn.setVisibility(View.INVISIBLE);
                 }
+
             }
         };
     }
 
     public void initBtn() {
-        login_btn = (Button) findViewById(R.id.login_btn);
-        login_btn.setOnClickListener(this);
-        register_btn = (Button) findViewById(R.id.register_btn);
-        register_btn.setOnClickListener(this);
-        forget_userpwd_btn = (Button) findViewById(R.id.forget_userpwd_btn);
-        forget_userpwd_btn.setOnClickListener(this);
-        username_clear_btn = (Button) findViewById(R.id.username_clear_btn);
-        username_clear_btn.setOnClickListener(this);
-        userpwd_clear_btn = (Button) findViewById(R.id.username_clear_btn);
-        userpwd_clear_btn.setOnClickListener(this);
-        userpwd_eye = (Button) findViewById(R.id.userpwd_eye);
-        userpwd_eye.setOnClickListener(this);
-        userpwd_clear_btn = (Button) findViewById(R.id.userpwd_clear_btn);
-        userpwd_clear_btn.setOnClickListener(this);
+
     }
 
-
+    private void creatDialog() {
+        mDialog = new ProgressDialog(this);
+        mDialog.setTitle("验证中");
+        mDialog.setMessage("正在登陆请稍后");
+        mDialog.setIndeterminate(true);
+        mDialog.setCancelable(true);
+        mDialog.show();
+    }
 
 }

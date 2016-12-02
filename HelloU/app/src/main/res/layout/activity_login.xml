@@ -34,6 +34,7 @@
                 android:paddingLeft="55dp" />
 
             <ImageView
+                android:id="@+id/isSelfLogin"
                 android:layout_width="22dp"
                 android:layout_height="21dp"
                 android:layout_marginLeft="8dp"
@@ -70,6 +71,7 @@
                 android:paddingLeft="55dp" />
 
             <ImageView
+                android:id="@+id/isMemorized"
                 android:layout_width="24dp"
                 android:layout_height="22dp"
                 android:layout_marginLeft="7dp"

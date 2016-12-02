@@ -108,14 +108,23 @@ public class EditStuActivity extends AppCompatActivity {
         user_pwd_edit.setText(userPwd);
 
         spinner_user_type.setSelection(userType, true);
+
+        // 如果不是超级管理员无权修改此项
+        if(CurrentUserNo.getB() != 2) {
+            spinner_user_type.setClickable(false);
+        }
+
+        // 管理员无权修改超级管理员密码
+        if(userType == 2 && CurrentUserNo.getB() != 2) {
+            user_pwd_edit.setEnabled(false);
+        }
+
         checkedGender = userGender;
         if(checkedGender == 1) {
             genderRadioGroup.check(R.id.btnMan);
         } else {
             genderRadioGroup.check(R.id.btnWoman);
         }
-
-
 
 
 //        Toast.makeText(this, userName, Toast.LENGTH_SHORT).show();
@@ -133,7 +142,6 @@ public class EditStuActivity extends AppCompatActivity {
 //        } else {
 //            show_user_gender.setText("女");
 //        }
-
 
         update_user_btn = (Button) findViewById(R.id.update_user_btn);
         update_user_btn.setOnClickListener(new View.OnClickListener() {

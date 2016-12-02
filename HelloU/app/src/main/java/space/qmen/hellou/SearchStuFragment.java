@@ -222,37 +222,67 @@ public class SearchStuFragment extends Fragment implements ListItemClickHelp {
     public void onClick(View item, View widget, int position, int which) {
         switch (which) {
             case R.id.edit_user_btn:
-                Intent intent = new Intent();
-                intent.putExtra("user_no", mData.get(position).getUserNo());
-                intent.setClass(SearchStuFragment.this.getActivity(), EditStuActivity.class);
-                startActivity(intent);
+//                Toast.makeText(SearchStuFragment.this.getActivity()
+//                        , mData.get(position).getUserNo() + "\n" + CurrentUserNo.getA()
+//                        , Toast.LENGTH_SHORT).show();
+                // 自己还是可以修改自己的信息的
+                if(mData.get(position).getUserNo().equals(CurrentUserNo.getA()) ) {
+                    Intent intent = new Intent();
+                    intent.putExtra("user_no", mData.get(position).getUserNo());
+                    intent.setClass(SearchStuFragment.this.getActivity(), EditStuActivity.class);
+                    startActivity(intent);
+                }
+
+                else if(CurrentUserNo.getB() == 0) {
+                    Toast.makeText(SearchStuFragment.this.getActivity()
+                            , "权限不足,无法操作"
+                            , Toast.LENGTH_SHORT).show();
+                }
+
+                else {
+                    Intent intent = new Intent();
+                    intent.putExtra("user_no", mData.get(position).getUserNo());
+                    intent.setClass(SearchStuFragment.this.getActivity(), EditStuActivity.class);
+                    startActivity(intent);
+                }
+
                 break;
 
             case R.id.delete_user_btn:
-                AlertDialog.Builder dialog = new AlertDialog.Builder
-                        (SearchStuFragment.this.getActivity());
-                final String user_no = mData.get(position).getUserNo();
-                final String user_name = mData.get(position).getUserName();
-                dialog.setTitle("删除用户确认");
-                dialog.setMessage("将删除账号为 " + user_no + " ,姓名为 " + user_name + "的用户");
-                dialog.setCancelable(false);
-                dialog.setPositiveButton("确认删除", new DialogInterface.
-                        OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        db = dbHelper.getWritableDatabase();
-                        db.delete("User", "user_no = ?", new String[] { user_no });
-                        Toast.makeText(SearchStuFragment.this.getActivity(), "删除成功", Toast.LENGTH_SHORT).show();
-                        user_search_btn.performClick();
-                    }
-                });
-                dialog.setNegativeButton("取消", new DialogInterface. OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        Toast.makeText(SearchStuFragment.this.getActivity(), "取消删除", Toast.LENGTH_SHORT).show();
-                    }
-                });
-                dialog.show();
+                if(CurrentUserNo.getB() != 2) {
+                    Toast.makeText(SearchStuFragment.this.getActivity()
+                            , "权限不足,无法操作"
+                            , Toast.LENGTH_SHORT).show();
+                }
+
+//                if else { 超级管理员无法删除, 先不做 }
+
+                else {
+                    AlertDialog.Builder dialog = new AlertDialog.Builder
+                            (SearchStuFragment.this.getActivity());
+                    final String user_no = mData.get(position).getUserNo();
+                    final String user_name = mData.get(position).getUserName();
+                    dialog.setTitle("删除用户确认");
+                    dialog.setMessage("将删除账号为 " + user_no + " ,姓名为 " + user_name + "的用户");
+                    dialog.setCancelable(false);
+                    dialog.setPositiveButton("确认删除", new DialogInterface.
+                            OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                            db = dbHelper.getWritableDatabase();
+                            db.delete("User", "user_no = ?", new String[]{user_no});
+                            Toast.makeText(SearchStuFragment.this.getActivity(), "删除成功", Toast.LENGTH_SHORT).show();
+                            user_search_btn.performClick();
+                        }
+                    });
+                    dialog.setNegativeButton("取消", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                            Toast.makeText(SearchStuFragment.this.getActivity(), "取消删除", Toast.LENGTH_SHORT).show();
+                        }
+                    });
+                    dialog.show();
+                }
                 break;
             default:
                 break;
