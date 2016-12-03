@@ -34,6 +34,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private SearchStuFragment fg2;
     private MarkDownFragment fg3;
     private MoreFragment fg4;
+    private ContactsFragment fg5; // 通讯录
     private FragmentManager fManager;
 
     private DatabaseHelper dbHelper;
@@ -92,7 +93,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         if(fg1 != null)fragmentTransaction.hide(fg1);
         if(fg2 != null)fragmentTransaction.hide(fg2);
         if(fg3 != null)fragmentTransaction.hide(fg3);
-        if(fg4 != null)fragmentTransaction.hide(fg4);
+//        if(fg4 != null)fragmentTransaction.hide(fg4);
+        if(fg5 != null)fragmentTransaction.hide(fg5);
     }
 
 
@@ -137,12 +139,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.tab_more:
                 setSelected();
                 tab_more.setSelected(true);
-                txt_topbar.setText("更多惊喜");
-                if(fg4 == null) {
-                    fg4 = new MoreFragment("更多惊喜");
-                    fTransaction.add(R.id.ly_content,fg4);
+                txt_topbar.setText("通讯录");
+                if(fg5 == null) {
+                    fg5 = new ContactsFragment();
+                    fTransaction.add(R.id.ly_content,fg5);
                 } else {
-                    fTransaction.show(fg4);
+                    fTransaction.show(fg5);
                 }
                 break;
         }

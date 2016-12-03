@@ -1,10 +1,10 @@
 <resources>
     <string name="app_name">HelloU</string>
 
-    <string name="tab_menu_add">Add</string>
-    <string name="tab_menu_des">DES</string>
+    <string name="tab_menu_add">Create</string>
+    <string name="tab_menu_des">RUD</string>
     <string name="tab_menu_markdown">md编辑器</string>
-    <string name="tab_menu_more">more</string>
+    <string name="tab_menu_more">通讯录</string>
 
     <string name="spin_title">用户类型</string>
 

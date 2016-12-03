@@ -6,6 +6,7 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.text.method.PasswordTransformationMethod;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -114,9 +115,14 @@ public class EditStuActivity extends AppCompatActivity {
             spinner_user_type.setClickable(false);
         }
 
-        // 管理员无权修改超级管理员密码
-        if(userType == 2 && CurrentUserNo.getB() != 2) {
+
+        // 管理员进入
+        // 超级管理员和其他管理员, 密码不可见且不可编辑
+        if(!userNo.equals(CurrentUserNo.getA())
+                && userType != 0
+                && CurrentUserNo.getB() == 1) {
             user_pwd_edit.setEnabled(false);
+            user_pwd_edit.setTransformationMethod(new PasswordTransformationMethod());
         }
 
         checkedGender = userGender;
