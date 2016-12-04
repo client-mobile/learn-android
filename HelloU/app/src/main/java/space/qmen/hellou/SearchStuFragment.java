@@ -293,6 +293,7 @@ public class SearchStuFragment extends Fragment implements ListItemClickHelp {
     public void onResume() {
         super.onResume();  // Always call the superclass method first
         user_search_btn.performClick();
+
     }
 
 }

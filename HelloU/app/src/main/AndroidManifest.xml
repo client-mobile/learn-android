@@ -3,6 +3,9 @@
     package="space.qmen.hellou">
 
     <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.SEND_RESPOND_VIA_MESSAGE" />
 
     <application
         android:allowBackup="true"
@@ -20,6 +23,8 @@
         <activity android:name=".MainActivity"></activity>
         <activity android:name=".EditStuActivity"></activity>
         <activity android:name=".ShowStuActivity"></activity>
+        <activity android:name=".ShowTelActivity"></activity>
+        <activity android:name=".AddTelActivity"></activity>
     </application>
 
 </manifest>

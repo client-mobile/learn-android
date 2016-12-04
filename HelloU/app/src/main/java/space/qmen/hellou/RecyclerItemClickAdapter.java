@@ -1,4 +1,4 @@
-package space.qmen.removetest;
+package space.qmen.hellou;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
@@ -7,12 +7,12 @@ import android.view.ViewGroup;
 
 import java.util.ArrayList;
 
-public class MyAdapter extends RecyclerView.Adapter {
+public class RecyclerItemClickAdapter extends RecyclerView.Adapter {
     private Context mContext;
     private LayoutInflater mInflater;
     private ArrayList<String> mList;
 
-    public MyAdapter(Context context, ArrayList<String> list) {
+    public RecyclerItemClickAdapter(Context context, ArrayList<String> list) {
         mContext = context;
         mInflater = LayoutInflater.from(context);
         mList = list;
@@ -20,12 +20,12 @@ public class MyAdapter extends RecyclerView.Adapter {
 
     @Override
     public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        return new MyViewHolder(mInflater.inflate(R.layout.recyclerview_item_layout, parent, false));
+        return new RecyclerViewHolder(mInflater.inflate(R.layout.layout_recycler_item, parent, false));
     }
 
     @Override
     public void onBindViewHolder(RecyclerView.ViewHolder holder, final int position) {
-        final MyViewHolder viewHolder = (MyViewHolder) holder;
+        final RecyclerViewHolder viewHolder = (RecyclerViewHolder) holder;
         viewHolder.content.setText(mList.get(position));
     }
 

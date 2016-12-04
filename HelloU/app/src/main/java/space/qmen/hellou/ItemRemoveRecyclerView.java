@@ -1,4 +1,4 @@
-package space.qmen.removetest;
+package space.qmen.hellou;
 
 import android.content.Context;
 import android.support.annotation.Nullable;
@@ -72,7 +72,7 @@ public class ItemRemoveRecyclerView extends RecyclerView {
                         return false;
                     }
 
-                    MyViewHolder viewHolder = (MyViewHolder) getChildViewHolder(view);
+                    RecyclerViewHolder viewHolder = (RecyclerViewHolder) getChildViewHolder(view);
 
                     mItemLayout = viewHolder.layout;
                     mPosition = viewHolder.getAdapterPosition();
@@ -192,4 +192,5 @@ public class ItemRemoveRecyclerView extends RecyclerView {
         mListener = listener;
     }
 }
+
 
