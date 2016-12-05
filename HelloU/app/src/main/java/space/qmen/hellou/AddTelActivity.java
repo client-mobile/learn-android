@@ -42,12 +42,12 @@ public class AddTelActivity extends AppCompatActivity {
                     Toast.makeText(getApplicationContext(), "新增失败,手机号或姓名不能为空", Toast.LENGTH_SHORT).show();
                 }
                 else {
+                    addContacts(tel_name.getText().toString(), tel_number.getText().toString()); // 需要一些时间，先说成功
+                    Toast.makeText(AddTelActivity.this, "新增成功", Toast.LENGTH_SHORT).show();
                     tel_name.setText("");
                     tel_number.setText("");
                     tel_email.setText("");
                     tel_address.setText("");
-                    Toast.makeText(getApplicationContext(), "新增成功", Toast.LENGTH_SHORT).show();
-                    addContacts(tel_name.getText().toString(), tel_number.getText().toString()); // 需要一些时间，先说成功
                 }
 
             }
@@ -80,14 +80,14 @@ public class AddTelActivity extends AppCompatActivity {
         values.put("raw_contact_id", contact_id);
         values.put(ContactsContract.Contacts.Data.MIMETYPE,"vnd.android.cursor.item/name");
         values.put("data2", name);
-        values.put("data1", "快点看见我吧***");
+        values.put("data1", name);
         resolver.insert(uri, values);
         values.clear();
 
         //add Phone
         values.put("raw_contact_id", contact_id);
         values.put(ContactsContract.Contacts.Data.MIMETYPE,"vnd.android.cursor.item/phone_v2");
-        values.put("data2", "2");   // 手机
+        values.put("data2", phone);   // 手机
         values.put("data1", phone);
         resolver.insert(uri, values);
         values.clear();

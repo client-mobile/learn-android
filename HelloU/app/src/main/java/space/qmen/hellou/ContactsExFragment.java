@@ -42,8 +42,9 @@ public class ContactsExFragment extends Fragment {
         View view = inflater.inflate(R.layout.fg_contacts_ex, container,false);
 
         recyclerView = (ItemRemoveRecyclerView) view.findViewById(R.id.id_item_remove_recyclerview);
-        FloatingActionButton fab = (FloatingActionButton) view.findViewById(R.id.fab);
 
+        // 悬浮按钮
+        FloatingActionButton fab = (FloatingActionButton) view.findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -53,38 +54,8 @@ public class ContactsExFragment extends Fragment {
             }
         });
 
-        mList = new ArrayList<>();
-        mList1 = new ArrayList<>();
-        mList2 = new ArrayList<>();
-
-        try {
-            cursor = getActivity().getContentResolver().query(ContactsContract.CommonDataKinds.Phone.CONTENT_URI,
-                    null, null, null, null);
-            while (cursor.moveToNext()) {
-
-                String displayName = cursor.getString(cursor
-                        .getColumnIndex(ContactsContract.CommonDataKinds.Phone.DISPLAY_NAME));
-                String number = cursor.getString(cursor
-                        .getColumnIndex(ContactsContract.CommonDataKinds.Phone.NUMBER));
-                int contactsId = cursor.getInt(cursor
-                        .getColumnIndex(ContactsContract.CommonDataKinds.Phone.CONTACT_ID));
-
-                mList1.add(displayName);
-                mList2.add(number);
-                mList.add(displayName + " " + number);
-            }
-
-        } catch (Exception e) {
-            e.printStackTrace();
-        } finally {
-            if (cursor != null) {
-                cursor.close();
-            }
-        }
-
-        adapter = new RecyclerItemClickAdapter(getActivity(), mList);
-        recyclerView.setLayoutManager(new LinearLayoutManager(this.getActivity()));
-        recyclerView.setAdapter(adapter);
+        // 存储数据的三个list
+        initRecyclerView();
 
         recyclerView.setOnItemClickListener(new OnItemClickListener() {
             @Override
@@ -94,7 +65,6 @@ public class ContactsExFragment extends Fragment {
                 intent.putExtra("contacts_number", mList2.get(position));
                 intent.setClass(getActivity(), ShowTelActivity.class);
                 startActivity(intent);
-
             }
 
             @Override
@@ -106,11 +76,10 @@ public class ContactsExFragment extends Fragment {
                     e.printStackTrace();
                 }
 
-                mList.remove(position);
-                adapter.removeItem(position);
-                recyclerView.setAdapter(adapter);
-
                 Toast.makeText(getActivity(), mList1.get(position) + "删除成功", Toast.LENGTH_SHORT).show();
+
+//                adapter.removeItem(position);
+                initRecyclerView();
             }
 
         });
@@ -154,7 +123,50 @@ public class ContactsExFragment extends Fragment {
         }
     }
 
-    public void readAllContacts() {
+//    public void readAllContacts() {
+//        try {
+//            cursor = getActivity().getContentResolver().query(ContactsContract.CommonDataKinds.Phone.CONTENT_URI,
+//                    null, null, null, null);
+//            while (cursor.moveToNext()) {
+//
+//                String displayName = cursor.getString(cursor
+//                        .getColumnIndex(ContactsContract.CommonDataKinds.Phone.DISPLAY_NAME));
+//                String number = cursor.getString(cursor
+//                        .getColumnIndex(ContactsContract.CommonDataKinds.Phone.NUMBER));
+//                int contactsId = cursor.getInt(cursor
+//                        .getColumnIndex(ContactsContract.CommonDataKinds.Phone.CONTACT_ID));
+//
+//                mList1.add(displayName);
+//                mList2.add(number);
+//                mList.add(displayName + " " + number);
+//            }
+//
+//        } catch (Exception e) {
+//            e.printStackTrace();
+//        } finally {
+//            if (cursor != null) {
+//                cursor.close();
+//            }
+//        }
+//
+//        adapter = new RecyclerItemClickAdapter(getActivity(), mList);
+//        recyclerView.setLayoutManager(new LinearLayoutManager(this.getActivity()));
+//        recyclerView.setAdapter(adapter);
+//    }
+
+
+    @Override
+    public void onResume() {
+        super.onResume();  // Always call the superclass method first
+//        readAllContacts();
+
+        initRecyclerView();
+    }
+
+    public void initRecyclerView() {
+        mList = new ArrayList<>();
+        mList1 = new ArrayList<>();
+        mList2 = new ArrayList<>();
         try {
             cursor = getActivity().getContentResolver().query(ContactsContract.CommonDataKinds.Phone.CONTENT_URI,
                     null, null, null, null);
@@ -184,13 +196,5 @@ public class ContactsExFragment extends Fragment {
         recyclerView.setLayoutManager(new LinearLayoutManager(this.getActivity()));
         recyclerView.setAdapter(adapter);
     }
-
-
-    @Override
-    public void onResume() {
-        super.onResume();  // Always call the superclass method first
-//        readAllContacts();
-    }
-
 
 }

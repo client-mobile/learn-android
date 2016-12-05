@@ -1,6 +1,7 @@
 package space.qmen.hellou;
 
 import android.content.ContentResolver;
+import android.content.ContentUris;
 import android.content.ContentValues;
 import android.content.Intent;
 import android.database.Cursor;
@@ -32,7 +33,7 @@ public class ShowTelActivity extends AppCompatActivity implements View.OnClickLi
     private Button message_btn;
 
 
-    private int get_id = 0;
+    private long get_id = 0;
     private String get_name = "";
     private String get_number = "";
 
@@ -74,17 +75,31 @@ public class ShowTelActivity extends AppCompatActivity implements View.OnClickLi
         cursor.close();
 
         // 根据姓名找id
-        cursor = resolver.query(uri, new String[]{ContactsContract.Contacts.Data._ID},"display_name=?", new String[]{get_name}, null);
+        cursor = resolver.query(uri, new String[]{ContactsContract.CommonDataKinds.Phone.CONTACT_ID},"display_name=?", new String[]{get_name}, null);
         if(cursor.moveToFirst()){
             get_id = cursor.getInt(0);
-//            uri = Uri.parse("content://com.android.contacts/data"); //对data表的所有数据操作
-//            resolver = this.getContentResolver();
-//            ContentValues values = new ContentValues();
-//            values.put("data1", contactsNumber);
-//            resolver.update(uri, values, "mimetype=? and raw_contact_id=?",
-//                    new String[]{"vnd.android.cursor.item/phone_v2", id + ""});
+            Toast.makeText(this, get_id + "", Toast.LENGTH_SHORT).show();
         }
 
+    }
+
+    public void updateContacts(long id, String phone) throws Exception {
+
+
+    }
+
+    public void update(String rawRawContactId, String NewNumber) {
+        ContentValues values = new ContentValues();
+        values.put(ContactsContract.CommonDataKinds.Phone.NUMBER, NewNumber);
+        values.put(ContactsContract.CommonDataKinds.Phone.TYPE,
+                ContactsContract.CommonDataKinds.Phone.TYPE_MOBILE);
+
+        String Where = ContactsContract.Data.RAW_CONTACT_ID + " = ? AND " +
+                ContactsContract.Data.MIMETYPE + " = ?";
+        String[] WhereParams = new String[]{rawRawContactId,
+                ContactsContract.CommonDataKinds.Phone.CONTENT_ITEM_TYPE, };
+
+        getContentResolver().update(ContactsContract.Data.CONTENT_URI, values, Where, WhereParams);
     }
 
     @Override
@@ -104,12 +119,46 @@ public class ShowTelActivity extends AppCompatActivity implements View.OnClickLi
                 show_tel_email.setEnabled(false);
                 show_tel_address.setEnabled(false);
 
-                Uri uri = Uri.parse("content://com.android.contacts/data"); //对data表的所有数据操作
-                ContentResolver resolver = getContentResolver();
-                ContentValues values = new ContentValues();
-                values.put("data1", show_tel_number.getText().toString());
-                resolver.update(uri, values, "mimetype=? and raw_contact_id=?",
-                    new String[]{"vnd.android.cursor.item/phone_v2", get_id + ""});
+                try {
+//                    Uri uri = Uri.parse("content://com.android.contacts/data");//对data表的所有数据操作
+//                    ContentValues values = new ContentValues();
+//
+//                    //add Name
+//                    values.put(ContactsContract.Contacts.Data.MIMETYPE,"vnd.android.cursor.item/name");
+//                    values.put("data2", "********");
+//                    values.put("data1", "********");
+//                    getContentResolver().update(uri, values,"_id=" + 20236, null);
+
+                    Uri uri = Uri.parse("content://com.android.contacts/raw_contacts");
+                    ContentResolver resolver = this.getContentResolver();
+                    ContentValues values = new ContentValues();
+                    long contact_id = ContentUris.parseId(resolver.insert(uri, values));
+
+                    //插入data表
+                    uri = Uri.parse("content://com.android.contacts/data");
+
+                    //add Name
+                    values.put("raw_contact_id", contact_id);
+                    values.put(ContactsContract.Contacts.Data.MIMETYPE,"vnd.android.cursor.item/name");
+                    values.put("data2", show_tel_name.getText().toString());
+                    values.put("data1", show_tel_name.getText().toString());
+                    resolver.insert(uri, values);
+                    values.clear();
+
+                    //add Phone
+                    values.put("raw_contact_id", contact_id);
+                    values.put(ContactsContract.Contacts.Data.MIMETYPE,"vnd.android.cursor.item/phone_v2");
+                    values.put("data2", show_tel_number.getText().toString());   // 手机
+                    values.put("data1", show_tel_number.getText().toString());
+                    resolver.insert(uri, values);
+                    values.clear();
+
+                    deleteContacts(get_name);
+
+
+                } catch (Exception e) {
+
+                }
 
                 save_btn.setVisibility(View.GONE);
                 edit_btn.setVisibility(View.VISIBLE);
@@ -130,7 +179,6 @@ public class ShowTelActivity extends AppCompatActivity implements View.OnClickLi
                 intent2.setData(Uri.parse("smsto:" + mobile2));
                 intent2.putExtra("sms_body", "发短信测试，请忽略，打扰了哈！！");
                 startActivity(intent2);
-
                 break;
             case R.id.back_btn:
                 onBackPressed();
@@ -139,4 +187,21 @@ public class ShowTelActivity extends AppCompatActivity implements View.OnClickLi
                 break;
         }
     }
+
+    public void deleteContacts(String name) throws Exception {
+        Uri uri = Uri.parse("content://com.android.contacts/raw_contacts");
+        ContentResolver resolver = this.getContentResolver();
+        Cursor cursor = resolver.query(uri, new String[]{ContactsContract.Contacts.Data._ID},"display_name=?", new String[]{name}, null);
+        if(cursor.moveToFirst()){
+            int id = cursor.getInt(0);
+            //根据id删除data中的相应数据
+            resolver.delete(uri, "display_name=?", new String[]{name});
+            uri = Uri.parse("content://com.android.contacts/data");
+            resolver.delete(uri, "raw_contact_id=?", new String[]{id+""});
+        }
+    }
+
+
 }
+
+

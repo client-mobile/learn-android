@@ -52,7 +52,6 @@
                 android:layout_height="30dp"
                 android:text="保存"
                 android:layout_weight="1"
-                android:layout_marginLeft="5dp"
                 android:textColor="@android:color/white"
                 android:background="#4CB2D0"
                 android:visibility="gone"
