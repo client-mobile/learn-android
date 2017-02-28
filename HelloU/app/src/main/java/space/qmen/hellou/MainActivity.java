@@ -13,7 +13,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.FrameLayout;
 import android.widget.TextView;
-import android.widget.Toast;
+
+import space.qmen.hellou.util.CurrentUserNo;
+import space.qmen.hellou.util.DatabaseHelper;
 
 /**
  * Created by Coder-pig on 2015/8/28 0028.

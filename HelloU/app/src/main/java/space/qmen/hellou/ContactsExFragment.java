@@ -2,7 +2,6 @@ package space.qmen.hellou;
 
 import android.app.Fragment;
 import android.content.ContentResolver;
-import android.content.ContentUris;
 import android.content.ContentValues;
 import android.content.Intent;
 import android.database.Cursor;
@@ -18,6 +17,10 @@ import android.widget.Toast;
 
 
 import java.util.ArrayList;
+
+import space.qmen.hellou.util.ItemRemoveRecyclerView;
+import space.qmen.hellou.util.OnItemClickListener;
+import space.qmen.hellou.util.RecyclerItemClickAdapter;
 
 // 侧滑效果参考 https://gold.xitu.io/entry/57bfedc9efa631005aa6b842
 // 联系人增删改查 http://www.cnblogs.com/jingmo0319/p/5600057.html

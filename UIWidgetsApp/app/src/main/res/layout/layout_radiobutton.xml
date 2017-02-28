@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <TableRow>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="请选择班级:"
+            android:textSize="25sp"
+            />
+    </TableRow>
+    <TableRow>
+        <RadioGroup android:id="@+id/rg"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <!-- 定义两个单选框 -->
+            <RadioButton android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/male"
+                android:text="计143"
+                android:checked="true"
+                />
+            <RadioButton android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/female"
+                android:text="计144"
+                />
+        </RadioGroup>
+    </TableRow>
+
+    <TableLayout>
+        <Button
+            android:id="@+id/class_submit_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="提交"/>
+    </TableLayout>
+
+</TableLayout>

@@ -16,6 +16,9 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Toast;
 
+import space.qmen.hellou.util.CurrentUserNo;
+import space.qmen.hellou.util.DatabaseHelper;
+
 public class LoginActivity extends AppCompatActivity implements View.OnClickListener {
 
     private Button login_btn, register_btn, forget_userpwd_btn;

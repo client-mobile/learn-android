@@ -120,14 +120,12 @@ public class ShowTelActivity extends AppCompatActivity implements View.OnClickLi
                 show_tel_address.setEnabled(false);
 
                 try {
-//                    Uri uri = Uri.parse("content://com.android.contacts/data");//对data表的所有数据操作
-//                    ContentValues values = new ContentValues();
-//
-//                    //add Name
-//                    values.put(ContactsContract.Contacts.Data.MIMETYPE,"vnd.android.cursor.item/name");
-//                    values.put("data2", "********");
-//                    values.put("data1", "********");
-//                    getContentResolver().update(uri, values,"_id=" + 20236, null);
+
+                    // 如果名字相同就不删除
+                    if( !show_tel_name.getText().equals(get_name) ) {
+                        deleteContacts(get_name);
+                    }
+
 
                     Uri uri = Uri.parse("content://com.android.contacts/raw_contacts");
                     ContentResolver resolver = this.getContentResolver();
@@ -152,9 +150,6 @@ public class ShowTelActivity extends AppCompatActivity implements View.OnClickLi
                     values.put("data1", show_tel_number.getText().toString());
                     resolver.insert(uri, values);
                     values.clear();
-
-                    deleteContacts(get_name);
-
 
                 } catch (Exception e) {
 

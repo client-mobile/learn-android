@@ -18,6 +18,9 @@ import android.widget.RadioGroup;
 import android.widget.Spinner;
 import android.widget.Toast;
 
+import space.qmen.hellou.util.CurrentUserNo;
+import space.qmen.hellou.util.DatabaseHelper;
+
 /**
  * Created by Jay on 2015/8/28 0028.
  */

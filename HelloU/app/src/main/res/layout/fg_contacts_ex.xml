@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <space.qmen.hellou.ItemRemoveRecyclerView
+    <space.qmen.hellou.util.ItemRemoveRecyclerView
         android:id="@+id/id_item_remove_recyclerview"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />

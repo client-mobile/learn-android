@@ -1,7 +1,6 @@
 package space.qmen.hellou;
 
 import android.content.ContentValues;
-import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
@@ -14,6 +13,9 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Spinner;
 import android.widget.Toast;
+
+import space.qmen.hellou.util.CurrentUserNo;
+import space.qmen.hellou.util.DatabaseHelper;
 
 /**
  * Created by Luo_0412 on 2016/12/1.
